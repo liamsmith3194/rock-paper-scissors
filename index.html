@@ -14,31 +14,50 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock, Paper, Scissors</title>
+    <title>Rock, Paper, Scissors Shoot!</title>
 </head>
 
 <body>
     <h1 class="heading">
         Rock, Paper, Scissors <br> Shoot!
-        <br>
-        <i class="far fa-hand-rock"></i>
-        <i class="far fa-hand-paper"></i>
-        <i class="far fa-hand-scissors"></i>
     </h1>
+
+    <div class="round-number">Round Number 0</div>
+
+<div class="layout">
+
+    <div class="left-side">User</div>
+
+    <div class="middle">VS</div>
+    
+
+    <div class="right-side">Computer</div>
+
+    <div class="controls-area">
+        <button data-type="rock" class="btn btn--big btn--green">
+            <i class="far fa-hand-rock"></i>
+        </button>
+        <button data-type="paper" class="btn btn--big btn--blue">
+            <i class="far fa-hand-paper"></i>
+        </button>
+        <button data-type="scissors" class="btn btn--big btn--orange">
+            <i class="far fa-hand-scissors"></i>
+        </button>
+    </div>
+
+</div>
+
 
     <div class="game-area">
         <div class="controls-area">
-            <button data-type="addition" class="btn btn--big btn--green">
-                <i class="fas fa-plus"></i>
+            <button data-type="rock" class="btn btn--big btn--green">
+                <i class="far fa-hand-rock"></i>
             </button>
-            <button data-type="subtract" class="btn btn--big btn--blue">
-                <i class="fas fa-minus"></i>
+            <button data-type="paper" class="btn btn--big btn--blue">
+                <i class="far fa-hand-paper"></i>
             </button>
-            <button data-type="multiply" class="btn btn--big btn--orange">
-                <i class="fas fa-times"></i>
-            </button>
-            <button data-type="division" class="btn btn--big btn--red">
-                <i class="fas fa-divide"></i>
+            <button data-type="scissors" class="btn btn--big btn--orange">
+                <i class="far fa-hand-scissors"></i>
             </button>
         </div>
         <div class="question-area">
@@ -53,8 +72,10 @@
     </div>
 
     <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <p class="win">Rounds Won 0</p>
+        <p class="draw">Rounds Drawn 0</p>
+        <p class="lose">Rounds Lost 0</p>
+
     </div>
 
     <script src="assets/js/script.js"></script>
