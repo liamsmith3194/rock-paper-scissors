@@ -22,38 +22,32 @@
         Rock, Paper, Scissors <br> Shoot!
     </h1>
 
-    <div class="round-number">Round Number 0</div>
+    
 
-<div class="layout">
-
-    <div class="left-side">User</div>
-
-    <div class="middle">VS</div>
-
-    <div class="right-side">Computer</div>
-
+    <div class="container">
+        <div class="column">
+            <div class="left-side">User</div>
+        </div>
+        <div class="column">
+            <div class="round-number">Round Number 0</div>
+                <p class="win">Rounds Won 0</p>
+                <p class="draw">Rounds Drawn 0</p>
+                <p class="lose">Rounds Lost 0</p>
+        </div>
+        <div class="column">
+            <div class="right-side">Computer</div>
+        </div>
+    </div>
     <div class="controls-area">
-        <button data-type="rock" class="btn btn--big btn--green">
+        <button data-type="rock" class="btn btn--big btn--gray">
             <i class="far fa-hand-rock"></i>
         </button>
-        <button data-type="paper" class="btn btn--big btn--blue">
+        <button data-type="paper" class="btn btn--big btn--gray">
             <i class="far fa-hand-paper"></i>
         </button>
-        <button data-type="scissors" class="btn btn--big btn--orange">
+        <button data-type="scissors" class="btn btn--big btn--gray">
             <i class="far fa-hand-scissors"></i>
         </button>
-    </div>
-
-</div>   
-        
-        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
-    </div>
-
-    <div class="score-area">
-        <p class="win">Rounds Won 0</p>
-        <p class="draw">Rounds Drawn 0</p>
-        <p class="lose">Rounds Lost 0</p>
-
     </div>
 
     <script src="assets/js/script.js"></script>
