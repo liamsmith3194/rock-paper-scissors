@@ -10,6 +10,7 @@ body {
 .heading {
     text-align: center;
     font-size: 200%;
+    font-family: "Bebas Neue", sans-serif;
     letter-spacing: 10px;
 }
 
@@ -26,31 +27,50 @@ body {
     height: auto;
 }
 
-.column {
+.column1 {
     width:33.33333333%;
     float:left;
 }
 
-.left-side{
-    height: 200px;
-    width: 200px;
+.column2 {
+    width:33.33333333%;
+    float:left;
+    margin-top: 2.5%;
+}
+
+.column3 {
+    width:33.33333333%;
+    float:left;
+}
+
+.user-answer-circle{
+    height: 15vw;
+    width: 15vw;
     display: inline-block;
     border: darkslategray 10px solid;
     border-radius: 50%;
 }
 
-.right-side{
-    height: 200px;
-    width: 200px;
+.user-answer{
+    font-size: 750%;
+}
+
+.computer-answer-circle{
+    height: 15vw;
+    width: 15vw;
     display: inline-block;
     border: darkslategray 10px solid;
     border-radius: 50%;
+}
+
+.computer-answer{
 
 }
 
 .controls-area {
     background-color: #E6ECF0;
     width: 80%;
+    height: 12vw;
     margin: 0 auto;
 }
 
