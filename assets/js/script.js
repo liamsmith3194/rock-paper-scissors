@@ -1,22 +1,52 @@
-       document.addEventListener("DOMContentLoaded", function() {
+// Wait for the DOM to finish loading before running the game
+// Get the button elements and add event listeners to them
+
+document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function(){
-            let gesture = this.getAttribute("data-type");
-                alert(`you clicked ${gesture}`);
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "rock") {
+                alert("YOU CLICKED ROCK");
+            }
+            if (this.getAttribute("data-type") === "paper") {
+                alert("YOU CLICKED PAPER");
+            }
+                if (this.getAttribute("data-type") === "scissors") {
+                    alert("YOU CLICKED SCISSORS");
+                }
+                else {
+                    let icon = this.getAttribute("data-type");
+                    startGame(icon)
+                }
+                
         })
     }
+
+    startGame("rock");
+
 })
 
+function startGame(icon) {
 
+    let rock = "ROCK";
+    let paper = "PAPER";
+    let scissors = "SCISSORS";
 
-function roundNumber(){
+if(icon === "rock"){
+    displayRock (rock);
 
 }
 
+if(icon === "paper"){
+    displayPaper (paper);
 
-function userAnswer(){
+}
+
+if(icon === "scissors"){
+    displayScissors (scissors);
+
+}
 
 }
 
@@ -25,15 +55,20 @@ function userAnswer(){
  * Generates random answers from rock, paper or scissors
  */
 
-function computerAnswer(){
+ function randomComputerAnswer(){
     let random = ["rock", "paper", "scissors"];
     return random[Math.floor(Math.random() * 3)];
 }
-console.log(computerAnswer(3));
+console.log(randomComputerAnswer(3));
+
+
+function displayUserAnswer(userAnswer) {
+    document.getElementsByClassName("user-answer").textContent = "User";
+}
 
 
 function displayComputerAnswer() {
-    document.getElementsByClassName("computer-answer").textContent = "Hi";
+    document.getElementsByClassName("computer-answer").textContent = "Computer";
 }
 
 
@@ -60,4 +95,14 @@ function increaseRoundLost() {
     let roundslost = parseInt(document.getElementsByClassName("lose").innerText);
     document.getElementsByClassName("lose").innerText = ++roundslost;
     
+}
+
+function displayRock (rock){
+    document.getElementsByClassName('user-Answer').textContent = rock;
+
+}
+
+function displayRock (paper){
+    document.getElementsByClassName('user-Answer').textContent = paper;
+
 }
