@@ -21,7 +21,7 @@ body {
     background-color: #E6ECF0;
     display: inline-block;
     width:80%;
-    height: 18vw;
+    height: 250px;
     margin-bottom: 20px;
 }
 
@@ -33,7 +33,7 @@ body {
 .column2 {
     width:33.33333333%;
     float:left;
-    margin-top: 2.5%;
+    margin-top: 20px;
 }
 
 .column3 {
@@ -42,8 +42,15 @@ body {
 }
 
 .user-answer-circle{
-    height: 15vw;
-    width: 15vw;
+
+    
+    width: 100px;
+    height: 100px;
+    font-size: 8rem;
+    margin: 30px 30px;
+    transition: all 0.5s;
+    height: 180px;
+    width: 180px;
     display: inline-block;
     border: darkslategray 10px solid;
     border-radius: 50%;
@@ -53,7 +60,6 @@ body {
 }
 
 .user-answer{
-    font-size: 10em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,17 +69,20 @@ body {
 }
 
 .computer-answer-circle{
-    height: 15vw;
-    width: 15vw;
+    width: 100px;
+    height: 100px;
+    font-size: 8rem;
+    margin: 30px 30px;
+    transition: all 0.5s;
+    height: 180px;
+    width: 180px;
     display: inline-block;
     border: darkslategray 10px solid;
     border-radius: 50%;
     position: relative;
-    
 }
 
 .computer-answer{
-    font-size: 10em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -81,12 +90,11 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-}
 
 .controls-area {
     background-color: #E6ECF0;
     width: 80%;
-    height: 12vw;
+    height: 150px;
     margin: 0 auto;
 }
 
@@ -136,8 +144,6 @@ body {
     content: attr(data-type);
     font-size: 1.5rem;
     color: darkslategray;
-    position: relative;
-    left: -0.5em;
 }
 
 .btn--gray {
