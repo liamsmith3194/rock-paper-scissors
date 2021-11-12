@@ -1,108 +1,263 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors Shoot!
 
-Welcome liamsmith3194,
+For the deployed Website [Click here.](https://liamsmith3194.github.io/rock-paper-scissors-shoot/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Welcome to Rock, Paper, Scissors Shoot! Based on the popular hand game, usually played between two people, in which each player simultaneously form one of three shapes with a hand. 
 
-## Gitpod Reminders
+![Hand Gestures]((https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/hand-gestures.png))
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Responsively designed to disply on a range of devices from desktops to mobiles.
 
-`python3 -m http.server`
+REPLACE WHEN DONE
+ ![Am I Responsive](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/am-i-responsive.PNG)
 
-A blue button should appear to click: _Make Public_,
+## User Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+### First Time Visitor Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+1. As a first time vistor, I want a clear understanding of the interactive game on show.
+2. As a first time vistor, I want a brief description of the rules in order to win the game.
+3. As a first time vistor, I want to feel comfortable with the content and imagery I am viewing.
+4. As a first time vistor, I need to know where the company is based and how to get there.
+5. As a first time vistor, I want to know about the personal trainer
+    - What qualifications does he have?
+    - How long has the personal trainer been working for?
+    - Why should I book a session?
+6. As a first time vistor, can I trust this person? Have there been reviewed well by previous clients are there numerous testimonials for me to look at. Do they have a social media presence which is regularly updated and followed?
+        
 
-A blue button should appear to click: _Make Public_,
+-   ### Design
 
-Another blue button should appear to click: _Open Browser_.
+    -   #### Colour Scheme
+        -   A minimal but clean colour scheme used with just two main colours being black and white.
+    -   #### Typography
+        -   The striking Bebas Neue typeface works really well with conservative Montserrat; used for the main body of the website. The difference in style creates a clean modern look and feel. Both typefaces have a fallback of sans-serif incase of any import issues.
+    -   #### Imagery
+        -   The first thing you see is the background hero image and horizontal tag line, designed to stun the vistor's attention and draw them in to see what is on offer.
+        - The use of opacity and imagery increases the clean and concise theme of the website but still informing the user of the options available.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+-   ### Wireframes
 
-To log into the Heroku toolbelt CLI:
+    -   Figma Desktop Wireframe - [View](https://www.figma.com/file/ciXYUYV361qot5MCN7Z5hF/Rock%2C-Paper%2C-Scissors-Shoot---Desktop?node-id=0%3A1)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    ![Figma Desktop Wireframe](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/wireframe-desktop.PNG)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+    -   Figma Mobile Wireframe -  [View](https://www.figma.com/file/EtSRFMgeaP0ACLVRtgNXmQ/Rock%2C-Paper%2C-Scissors-Shoot---Mobile?node-id=0%3A1)
 
-------
+    ![Figma Mobile Wireframe](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/wireframe-mobile-1.PNG)    ![Figma Mobile Wireframe](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/wireframe-mobile-2.PNG)
+    
+## Features
+Below is a brief overview of the website page by page and it's main features.
 
-## Release History
+-   ### Landing Page ###
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    -   Clean header with a navigation bar on the right side and bold logo on the left providing typography contrast. The header remains at the top of each page as you scroll down or use the provided links.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    -   Hero image with tag-line across a banner with opacity to make the offer stand out.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    ![Landing Page](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/header.PNG)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-   ### Services Page ###
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    -   The services section provides the continuity from the landing page by using white text on a image and central banner across the width of the screen and same opacity values.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    -   The white text ensures the imagery isn't too overpowering.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    ![Services Page](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/services-section.PNG)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+-   ### About Page ###
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    -   Telling the user of the personal trainer is very important, there are some obvious questions that need answering, this is done in the about section. 
+    -   A small piece of background information and why they should get in contact. 
+    -   Followed by the personal trainers' qualifications, separated by dumbbell icons.
+    -   A link to the contact form is provided underneath and short motivation paragraph.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    ![About Page](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/about-section.PNG)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+-   ### Testimonals Page ###
+    -   Six direct quotes have been used from past and present clients providing their full names.
+    -   These are made to stand out by using a double lined border and drop shadow.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+    ![Testimonials Page](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/testimonials-section.PNG)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-   ### Contact Page ###
+    -   Returning to the earlier theme of image and opacity the contact form is easy to read and use, with standard personal information and then a dropdown choice for the goal of this user. 
+    -   The options link back to the services on offer from the services section.
+    -   An interactive map is shown below the form with the option to expand or use directions.
+    -   The footer contains links to social media such as Facebook, Twitter and Instagram.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    ![Contact Page](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/contact-section.PNG)
 
-------
+-   ### Submit Page ###
+    -   Created to give the user piece of mind that the form filled out has been sent successfully.
+    -   The header and footer remain on this separate html.
 
-## FAQ about the uptime script
+    ![Submit Page](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/submit-page.PNG)
 
-**Why have you added this script?**
+## Technologies
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Created by using:
 
-**How will this affect me?**
+-   HTML5
+-   CSS3
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Programs including:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Bebas Neue' (headings and sub-heading) and 'Montserrat' (body) fonts into the style.css file.
+- [Google Maps:](https://www.google.com/maps)
+    - Google maps was used to show the company location and directions if needed.
+- [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used for the social media icons in the footer and dumbbell icons around the qualifications.
+- [Gitpod](https://gitpod.io/)
+    - Gitpod was used to create and update the website throughout via the terminal to push changes to Github.
+- [GitHub:](https://github.com/)
+    - GitHub was used to embed the site and store all imagery.
+- [Figma:](https://figma.com/)
+    - Figma was used to create the wireframes during the design process.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Testing
 
-**So….?**
+### Validator Testing ###
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no syntax errors in the project.
 
-**Can I opt out?**
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fliamsmith3194.github.io%2Fpersonal-best-pt%2F)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliamsmith3194.github.io%2Fpersonal-best-pt)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Lighthouse Testing ###
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Intial lighthouse socres produced a performance of 75 and accessibilty of 96. After exporting all images to webp files and giving the iframe element a title it improved to 94 (mobile) and 98 respectively.
 
-**Anything more?**
+-   Mobile Results
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Lighthouse Mobile Results](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/lighthouse-mobile.PNG)
 
----
+-   Desktop Results
 
-Happy coding!
+![Lighthouse Desktop Results](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/lighthouse-desktop.PNG)
+
+### Testing User Stories from User Experience (UX) Section
+
+-   #### First Time Visitor Goals
+
+    Q1. As a first time vistor, I want a clear understanding of the purpose of the website.
+
+    -   As soon as users enter the site, they are drawn to the hero image spread across the width of the screen with the tag line offer.
+    -   Scrolling down there is a clear message showing what services are available from the use of clipped images and opacity captions.
+    -   The about section is presented cleanly, split into three sections with a nice use of icons around the qualifications. 
+    -   Immediately the use of shadow around the testimonial boxes stands out. A simple name and quote layout works well.
+    -   Again the subtle use of opcaity is the driving force behind the contact page with the main form standing out in white. The change of colour on hover is a nice touch especially on the submit button.
+
+    Q2. As a first time vistor, I want a concise description of the fitness goals this personal trainer concentrates on.
+
+    -   This is very easy to see from the services section using the images and the short descriptions.
+    -   The contact form also links to the services on offer with the 'Goal' dropdown.
+
+    Q3. As a first time vistor, I want to feel comfortable with the content and imagery I am viewing.
+
+    -   There is no content from the site that would offend or make any user feel uncomfortable.
+
+    Q4. As a first time vistor, I need to know where the company is based and how to get there.
+
+    -   At the bottom of the site, there is a map spread across the whole screen showing the location of company. This also has the option to show directions using the in-built link which opens in a new tab.   
+
+    Q5. As a first time vistor, I want to know about the personal trainer.
+    1.  What qualifications does he have?
+    2.  How long has the personal trainer been working for?
+    3.  Why should I book a session?
+
+    -   The qualifications are clearly presented in the about section using the official titles and centred around dumbbell icons.
+    -   The very first sentence gives the users confidence based on the "over 15 years of personal training"
+    -   The final paragraph provides a handy link to the contact form and provides the first piece of motivational text in order to use said contact form.
+
+    Q6. As a first time vistor, can I trust this person? Have they been reviewed well by previous clients are there numerous testimonials for me to look at. Do they have a social media presence which is regularly updated and followed.
+
+    -   All the testimonials posted are shown with first and seconds names and contain speech marks so that you know that they are direct quotes.
+    -   Links to Facebook, Twitter and Instagram are found at the bottom of the website and open in a new tab when clicked. Keeping them on the page after the form has been submited increases the continuity.
+
+### Continued Testing
+
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The website has been displayed on various devices such as Desktop PC, iMac, Laptop, iPhoneX, iPad & iPad mini.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+### Glitches
+
+-   Internet Explorer 
+    -   The injury recovery image does not display.
+    -   The sticky navigation bar does not move down with a mouse scroll.
+    -   Warning message - "You are using a browser that is not supported by the Google Maps JavaScript API. Please consider changing your browser."
+
+-   On mobile devices the submit button's styling is removed. As has the hover pseudo style.
+    -   A white gap can be seen to the right of the footer and navigation bar as a result.
+-   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+
+## Deployment
+
+### GitHub Pages
+
+GitHub was the program used to deploy the the site, it was accomplished by using the following steps:
+
+1. Log in to GitHub and select the GitHub Repository.
+
+![GitHub Repository](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-repo.PNG)
+
+2. At the top of the page towards the middle of the screen you will see a "Settings" menu item with a cog icon.
+
+![GitHub Settings](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-settings.PNG)
+3. On the left hand side is a vertical list locate and click "Pages".
+
+![GitHub Pages](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-pages.PNG)
+
+4. Under the "Source" sub-heading, click on the dropdown by default "None" and choose "main".
+
+![GitHub Source](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-source.PNG)
+
+5. Click "Save"
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+
+![GitHub Publish](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-published.PNG)
+
+## References
+
+### Code
+
+-   The sub-headings use padding and margin (top), this ensures when using the navigation bar links, the sub-headings are displayed futher down the page. This came from this post on [StackOverflow](https://stackoverflow.com/questions/17534661/make-anchor-link-go-some-pixels-above-where-its-linked-to). 
+
+-   Below is a screenshot showing the result **before** the StackOverflow Code:
+
+![Before StackOverflow Code](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/before-heading-fix.PNG)
+
+-   Below is a screenshot showing the result **after** the StackOverflow Code:
+
+
+![After StackOverflow Code](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/after-heading-fix.PNG)
+
+-   The testimonials page was created using Flexbox from [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). This was used to enable the tablet screen size (and smaller) to view the testimonials as a list and one column. 
+
+-   The blurred shadow effect used on the testimonials was taken from [w3schools](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp), but amended to the developers criteria in terms of colour, depth and strength.
+
+### Content
+
+-   All content was written by the developer.
+
+### Digital Artwork
+
+-   All Images were sourced from google.
+-   [Dumbbell](https://fontawesome.com/v5.15/icons/dumbbell), [Facebook](https://fontawesome.com/v5.15/icons/facebook?style=brands), [Twitter](https://fontawesome.com/v5.15/icons/twitter?style=brands) and [Instagram](https://fontawesome.com/v5.15/icons/instagram?style=brands) icons were sourced from Font Awesome.
+-   The map was sourced from [google maps](https://www.google.com/maps/place/Pump+Gyms+Northampton/@52.253981,-0.914734,16z/data=!4m5!3m4!1s0x0:0x9fd0125eb045ef27!8m2!3d52.2539814!4d-0.9147335?hl=en) using the location of Pump Gyms Northampton 
+
+### Mentions
+
+-   My Mentor for answering my questions throughout.
+
+-   Slack users for constructive feedback and suggestions for improvement.
+
+    
+
+

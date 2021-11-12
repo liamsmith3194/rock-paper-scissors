@@ -82,7 +82,7 @@ body {
     position: relative;
 }
 
-.computer-answer{
+#computer-answer{
     position: absolute;
     top: 50%;
     left: 50%;
