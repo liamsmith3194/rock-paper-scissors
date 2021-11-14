@@ -24,60 +24,36 @@
         <div class="container">
         <div class="column1">
             <div class="user-answer-circle">
-                <div id="user-answer">hi there</i></div>
+                <div id="user-answer"><img id="user-image" src="./assets/images/user-rock.png"></div>
             </div>
         </div>
 
         <div class="column2">
             <div class="round-number">Round Number 0</div>
+            <div class="scoreboard">
                 <p class="win">Rounds Won 0</p>
                 <p class="draw">Rounds Drawn 0</p>
                 <p class="lose">Rounds Lost 0</p>
+            </div>
         </div>
 
         <div class="column3">
                 <div class="computer-answer-circle">
-                    <div id="computer-answer"><i class="far fa-hand-scissors"></i></div>
+                    <div id="computer-answer">Scissors</div>
                 </div>
             </div>
         </div>
 
     <div class="controls-area">
         <button data-type="rock" class="btn btn--big btn--gray">
-            <i class="far fa-hand-rock"></i>
+            <img src="./assets/images/user-rock-tp.png">
         </button>
         <button data-type="paper" class="btn btn--big btn--gray">
-            <i class="far fa-hand-paper"></i>
+            <img src="./assets/images/user-paper-tp.png">
         </button>
         <button data-type="scissors" class="btn btn--big btn--gray">
-            <i class="far fa-hand-scissors"></i>
+            <img src="./assets/images/user-scissors-tp.png">
         </button>
-    </div>
-
-    <div class="game-area">
-        <div class="controls-area">
-            <button data-type="addition" class="btn btn--big btn--green">
-                <i class="fas fa-plus"></i>
-            </button>
-            <button data-type="subtract" class="btn btn--big btn--blue">
-                <i class="fas fa-minus"></i>
-            </button>
-            <button data-type="multiply" class="btn btn--big btn--orange">
-                <i class="fas fa-times"></i>
-            </button>
-            <button data-type="division" class="btn btn--big btn--red">
-                <i class="fas fa-divide"></i>
-            </button>
-        </div>
-        <div class="question-area">
-            <span id="operand1">0</span>
-            <span id="operator">x</span>
-            <span id="operand2">0</span>
-            <span>=</span>
-            <p class="answer-message">Enter Answer:</p>
-            <input id="answer-box" type="number">
-        </div>
-        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
     </div>
 
     <script src="assets/js/script.js"></script>

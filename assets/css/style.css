@@ -1,28 +1,29 @@
 body {
     background-color: white;
     font-family: "Bebas Neue", sans-serif;
-    color: darkslategray;
+    letter-spacing: 2px;
+    color: #686868;
     text-align: center;
 }
 
 /* --------- Heading */
 
 .game-name{
-    font-size: 4rem;
+    margin-top: 25px;
+    font-size: 2.75rem;
+    letter-spacing: 5px;
 }
 
 /* --------- Game layout */
 
 .round-number{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .container {
-    background-color: #E6ECF0;
     display: inline-block;
     width:80%;
     height: 250px;
-    margin-bottom: 20px;
 }
 
 .column1 {
@@ -33,7 +34,7 @@ body {
 .column2 {
     width:33.33333333%;
     float:left;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .column3 {
@@ -41,21 +42,24 @@ body {
     float:left;
 }
 
+.scoreboard {
+    margin-top: 40px;
+}
+
 .user-answer-circle{
 
     
     width: 100px;
     height: 100px;
-    font-size: 8rem;
+    font-size: 6rem;
     margin: 30px 30px;
     transition: all 0.5s;
     height: 180px;
     width: 180px;
     display: inline-block;
-    border: darkslategray 10px solid;
+    border: #686868 10px solid;
     border-radius: 50%;
-    position: relative;
-    
+    position: relative;   
     
 }
 
@@ -77,7 +81,7 @@ body {
     height: 180px;
     width: 180px;
     display: inline-block;
-    border: darkslategray 10px solid;
+    border: #686868 10px solid;
     border-radius: 50%;
     position: relative;
 }
@@ -92,25 +96,29 @@ body {
 }
 
 .controls-area {
-    background-color: #E6ECF0;
     width: 80%;
     height: 150px;
     margin: 0 auto;
 }
 
+.controls-area img {
+    width: 90%;
+    height: 90%;
+}
+
 .win {
-    color: green;
-    font-size: 1.5rem;
+    color: #3EA62D;
+    font-size: 1.25rem;
 }
 
 .lose {
-    color: red;
-    font-size: 1.5rem;
+    color: #FF0000;
+    font-size: 1.25rem;
 }
 
 .draw {
-    color: darkslategray;
-    font-size: 1.5rem;
+    color: #000000;
+    font-size: 1.25rem;
 }
 
 /* --------- Buttons */
@@ -119,7 +127,7 @@ body {
     width: 220px;
     height: 60px;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     color: white;
 }
@@ -132,9 +140,9 @@ body {
     padding-top: 10px;
     border-radius: 50%;
     background-color: white;
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
+    border: 7.5px solid;
+    width: 150px;
+    height: 150px;
     font-size: 3.2rem;
     margin: 0 30px;
     transition: all 0.5s;
@@ -142,23 +150,23 @@ body {
 
 .btn--big::after{
     content: attr(data-type);
-    font-size: 1.5rem;
-    color: darkslategray;
+    font-size: 1.25rem;
+    color: #686868;
 }
 
 .btn--gray {
-    border-color: darkslategray;
-    color: darkslategray;
+    border-color: #686868;
+    color: #686868;
 }
 
 .btn--gray:active,
 .btn--gray:hover {
-    background-color: darkslategray;
+    background-color: #686868;
     color: white;
 }
 
 button{
-    font-size: 3rem;
+    font-size: 1.25rem;
 }
 
 /* --------- Media queries */

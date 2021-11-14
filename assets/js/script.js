@@ -57,7 +57,7 @@ console.log(randomComputerAnswer(3));
 
 function displayRock() {
 
-    document.getElementById('user-answer').textContent = "ROCK";
+    document.getElementById('user-image').src = "assets/images/user-rock.png";
 }
 
 function displayPaper() {
@@ -69,12 +69,6 @@ function displayScissors() {
 
     document.getElementById('user-answer').textContent = "SCISSORS";
 }
-
-
-
-
-
-
 
 function compareAnswers(){
 
