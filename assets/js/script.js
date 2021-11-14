@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    runGame("rock");
-
 });
 
 /**
@@ -45,17 +43,12 @@ function runGame(userAnswer) {
  */
 
  function randomComputerAnswer(){
-    
-    var words = ['Rock', 'Paper', 'Scissors'];
-    var word = words[Math.floor(Math.random() * words.length)];
-
 
     let computerAnswer = ["ROCK", "PAPER", "SCISSORS"];
     return computerAnswer[Math.floor(Math.random("rock", "paper", "scissors") * 3)];
     
 }
 console.log(randomComputerAnswer(3));
-
 
 /**
  * Generates answer selected by user and displays correct image.
@@ -77,27 +70,24 @@ function displayUserScissors() {
     document.getElementById('user-image').src = 'assets/images/user-scissors.png';
 }
 
-
-
-
 /**
  * Generates answer selected by computer and displays correct image.
  */
 
  function displayComputerRock() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-rock.png';
+    document.getElementById('computer-image').textContent = "ROCK";
 }
 
 function displayComputerPaper() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-paper.png';
+    document.getElementById('computer-image').textContent = "PAPER";
     
 }
 
 function displayComputerScissors() {
 
-    document.getElementById('computerr-image').src = 'assets/images/computer-scissors.png';
+    document.getElementById('computer-image').textContent = "SCISSORS";
 }
 
 
@@ -126,6 +116,4 @@ function increaseRoundLost() {
     document.getElementsByClassName("lose").innerText = ++roundslost;
     
 }
-
-
 
