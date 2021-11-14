@@ -57,17 +57,18 @@ console.log(randomComputerAnswer(3));
 
 function displayRock() {
 
-    document.getElementById('user-image').src = "assets/images/user-rock.png";
+    document.getElementById('user-image').src = 'assets/images/user-rock.png';
 }
 
 function displayPaper() {
 
-    document.getElementById('user-answer').textContent = "PAPER";
+    document.getElementById('user-image').src = 'assets/images/user-paper.png';
+    
 }
 
 function displayScissors() {
 
-    document.getElementById('user-answer').textContent = "SCISSORS";
+    document.getElementById('user-image').src = 'assets/images/user-scissors.png';
 }
 
 function compareAnswers(){
