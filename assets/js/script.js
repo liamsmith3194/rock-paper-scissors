@@ -70,26 +70,6 @@ function displayUserScissors() {
     document.getElementById('user-image').src = 'assets/images/user-scissors.png';
 }
 
-/**
- * Generates answer selected by computer and displays correct image.
- */
-
- function displayComputerRock() {
-
-    document.getElementById('computer-image').textContent = "ROCK";
-}
-
-function displayComputerPaper() {
-
-    document.getElementById('computer-image').textContent = "PAPER";
-    
-}
-
-function displayComputerScissors() {
-
-    document.getElementById('computer-image').textContent = "SCISSORS";
-}
-
 
 
 function compareAnswers(){
@@ -117,3 +97,46 @@ function increaseRoundLost() {
     
 }
 
+/**
+ * The main game "loop", called when the script is first loaded
+ * and after the user's answer has been processed
+ */
+function runGame(gameType) {
+
+ 
+
+ // The function name "runGame" will not work for both changing it will produce the computer answer keeping in changes the user answer.
+    
+ var words = ['Rock', 'Paper', 'Scissors'];
+ var word = words[Math.floor(Math.random() * words.length)];
+
+ if (gameType === "rock") {
+     displayComputerRock(word);
+ } else if (gameType === "paper") {
+     displayComputerScissors(word);
+ } else if (gameType === "scissors" ) {
+     displayComputerPaper(word);
+ } else {
+     alert(`Unknown game type: ${gameType}`);
+     throw `Unknown game type: ${gameType}. Aborting!`;
+ }
+
+}
+
+function displayComputerRock(computeranswer) {
+
+    document.getElementById('test').textContent = computeranswer;
+    
+}
+
+function displayComputerPaper(computeranswer) {
+
+    document.getElementById('test').textContent = computeranswer;
+
+}
+
+function displayComputerScissors(computeranswer) {
+
+    document.getElementById('test').textContent = computeranswer;
+
+}
