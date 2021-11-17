@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+
 /**
  * The main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
@@ -42,13 +43,13 @@ function playGame(userAnswer) {
  * Generates random answers from rock, paper or scissors to the console.
  */
 
- function randomComputerAnswer(){
+ function randomcomputerAnswer(){
 
     let computerAnswer = ["ROCK", "PAPER", "SCISSORS"];
     return computerAnswer[Math.floor(Math.random("rock", "paper", "scissors") * 3)];
     
 }
-console.log(randomComputerAnswer(3));
+console.log(randomcomputerAnswer(3));
 
 /**
  * Generates answer selected by user and displays correct image.
@@ -101,14 +102,14 @@ function increaseRoundLost() {
  * The main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
  */
-function playGame(gameType) {
+function returnGame(gameType) {
 
  
 
  // The function name "playGame" will not work for both changing it will produce the computer answer keeping in changes the user answer.
     
- var words = ['Rock', 'Paper', 'Scissors'];
- var word = words[Math.floor(Math.random() * words.length)];
+    let words = ['Rock', 'Paper', 'Scissors'];
+    let word = words[Math.floor(Math.random() * words.length)];
 
  if (gameType === "rock") {
      displayComputerRock(word);
@@ -123,20 +124,20 @@ function playGame(gameType) {
 
 }
 
-function displayComputerRock(computeranswer) {
+function displayComputerRock() {
 
-    document.getElementById('test').textContent = computeranswer;
+    document.getElementById('computer-image').src = 'assets/images/computer-rock.png';
     
 }
 
-function displayComputerPaper(computeranswer) {
+function displayComputerPaper() {
 
-    document.getElementById('test').textContent = computeranswer;
+    document.getElementById('computer-image').src = 'assets/images/computer-paper.png';
 
 }
 
-function displayComputerScissors(computeranswer) {
+function displayComputerScissors() {
 
-    document.getElementById('test').textContent = computeranswer;
+    document.getElementById('computer-image').src = 'assets/images/computer-scissors.png';
 
 }

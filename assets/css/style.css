@@ -22,8 +22,8 @@ body {
 
 .container {
     display: inline-block;
-    width:100%;
-    height: 250px;
+    width: 100%;
+    height: auto;
 }
 
 .column1 {
@@ -45,16 +45,18 @@ body {
 
 }
 
+.player-name{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
 .scoreboard {
     margin-top: 25px;
 }
 
-.user-answer-circle{
-
-    
+.user-answer-area{
     width: 100px;
     height: 100px;
-    font-size: 6rem;
     margin: 30px 30px;
     transition: all 0.5s;
     height: 180px;
@@ -66,17 +68,16 @@ body {
 
 .user-answer{
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     text-align: center;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
 
-.computer-answer-circle{
+.computer-answer-area{
     width: 100px;
     height: 100px;
-    font-size: 6rem;
     margin: 30px 30px;
     transition: all 0.5s;
     height: 180px;
@@ -92,17 +93,6 @@ body {
     text-align: center;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-}
-
-.buttons-area {
-    width: 80%;
-    height: 150px;
-    margin: -25px auto;
-}
-
-.buttons-area img {
-    width: 90%;
-    height: 90%;
 }
 
 .win {
@@ -122,6 +112,21 @@ body {
 
 /* --------- Buttons */
 
+.buttons-area {
+    width: 100%;
+    height: auto;
+    margin: -25px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-area img {
+    width: 100%;
+    height: 100%;
+}
+
 .button-style{
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.25rem;
@@ -135,8 +140,8 @@ body {
     height: 120px;
     margin: 0 50px;
     transition: all 0.5s;
+    z-index: 1;
 }
-
 
 .button-style::after{
     content: attr(data-type);
@@ -157,10 +162,11 @@ body {
 .rules-area {
     width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 25px auto;
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.25rem;
     text-transform: uppercase;
+    position: absolute;
 
 }
 
@@ -171,103 +177,47 @@ body {
 
 /* --------- Media queries */
 
-@media (max-width: 414px) {
-   
+@media (max-width: 768px) {
+    
+}
+
+
+@media (max-width: 425px) {
+
+    #user-image{
+        width: 80%;
+        height: 80%;
+    }
+
+    #computer-image{
+        width: 80%;
+        height: 80%;
+    }
+
+    .scoreboard{
+        margin-top: 50px;
+    }
+
+    .button-style{
+        width: 80px;
+        height: 80px;
+        margin: 0 25px;
+    }
+
+    .button-style::after{
+        font-size: 1rem;
+    }
+
+    .rules-area {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        position: absolute;
+    
+    }
 }
 
 @media (max-width: 320px) {
    
 
-}
-
-
-/* --------- Buttons */
-
-.btn {
-    width: 220px;
-    height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: white;
-}
-
-.btn:focus {
-    outline: none;
-}
-
-.btn--big {
-    padding-top: 10px;
-    border-radius: 50%;
-    background-color: white;
-    border: 10px solid;
-    width: 100px;
-    height: 100px;
-    font-size: 3.2rem;
-    margin: 0 30px;
-    transition: all 0.5s;
-}
-
-.btn--big::after{
-    content: attr(data-type);
-    font-size: 1rem;
-    color: #445361;
-    position: relative;
-    left: -0.5em;
-}
-
-.btn--blue {
-    border-color: blue;
-    color: blue;
-}
-
-.btn--blue:active,
-.btn--blue:hover {
-    background-color: darkblue;
-    color: white;
-}
-
-.btn--orange {
-    border-color: orange;
-    color: orange;
-}
-
-.btn--orange:active,
-.btn--orange:hover {
-    background-color: darkorange;
-    color: white;
-}
-
-.btn--red {
-    border-color: red;
-    color: red;
-}
-
-.btn--red:active,
-.btn--red:hover {
-    background-color: darkred;
-    color: white;
-}
-
-.btn--green {
-    border-color: green;
-    color: green;
-}
-
-.btn--green:active,
-.btn--green:hover {
-    background-color: darkgreen;
-    color: white;
-}
-
-.btn--gray {
-    margin-top: 25px;
-    background-color: #445361;
-    border: 1px transparent;
-    border-radius: 20px;
-}
-
-.btn--gray:active,
-.btn--gray:hover {
-    background-color: #0d1013;
 }
