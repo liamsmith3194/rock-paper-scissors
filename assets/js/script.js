@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 checkAnswer();
             } else {
                 let userAnswer = this.getAttribute("data-type");
-                runGame(userAnswer);
+                playGame(userAnswer);
             }
         });
     }
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
  * and after the user's answer has been processed
  */
 
-function runGame(userAnswer) {
+function playGame(userAnswer) {
 
     if (userAnswer === "rock") {
         displayUserRock();
@@ -101,11 +101,11 @@ function increaseRoundLost() {
  * The main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
  */
-function runGame(gameType) {
+function playGame(gameType) {
 
  
 
- // The function name "runGame" will not work for both changing it will produce the computer answer keeping in changes the user answer.
+ // The function name "playGame" will not work for both changing it will produce the computer answer keeping in changes the user answer.
     
  var words = ['Rock', 'Paper', 'Scissors'];
  var word = words[Math.floor(Math.random() * words.length)];

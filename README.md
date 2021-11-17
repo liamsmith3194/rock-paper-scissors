@@ -5,7 +5,7 @@ For the deployed Website [Click here.](https://liamsmith3194.github.io/rock-pape
 
 Welcome to Rock, Paper, Scissors Shoot! Based on the popular hand game, usually played between two people, in which each player simultaneously form one of three shapes with a hand. 
 
-![Hand Gestures]((https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/hand-gestures.png))
+![Hand Gestures](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/hand-gestures.png)
 
 Responsively designed to disply on a range of devices from desktops to mobiles.
 
@@ -23,14 +23,7 @@ REPLACE WHEN DONE
 
 ### Returning Visitor Goals
 
-1. As a returning vistor, I want to enjoy the game as much as I did the first time.
-
-### First Time Visitor Goals
-
-1. As a first time vistor, I want a clear understanding of the interactive game on show.
-2. As a first time vistor, I want a brief description of the rules in order to win the game.
-3. As a first time vistor, I want to have live scoring round by round.
-4. As a first time vistor, I want to enjoy the game and come back again and again.        
+1. As a returning vistor, I want to enjoy the game as much as I did the first time.       
 
 -   ### Design
 
@@ -52,7 +45,7 @@ REPLACE WHEN DONE
 
     ![Figma Mobile Wireframe](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/mobile-wireframe.PNG)
     
-## Features TBC
+## Features REPLACE WHEN DONE
 Below is a brief overview of the website and it's main features.
 
 -   ### Landing Page ###
@@ -85,7 +78,7 @@ Below is a brief overview of the website and it's main features.
 
 ## Testing
 
-### Validator Testing TBC ###
+### Validator Testing REPLACE WHEN DONE ###
 
 The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no syntax errors in the project.
 
@@ -106,7 +99,7 @@ Intial lighthouse socres produced a performance of 75 and accessibilty of 96. Af
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### First Time Visitor Goals TBC
+-   #### First Time Visitor Goals REPLACE WHEN DONE
 
     Q1. As a first time vistor, I want a clear understanding of the interactive game on show. 
 
@@ -129,7 +122,7 @@ Intial lighthouse socres produced a performance of 75 and accessibilty of 96. Af
 
     -   At the bottom of the site, there is a map spread across the whole screen showing the location of company. This also has the option to show directions using the in-built link which opens in a new tab.   
 
-### Continued Testing TBC
+### Continued Testing REPLACE WHEN DONE
 
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website has been displayed on various devices such as Desktop PC, iMac, Laptop, iPhoneX, iPad & iPad mini.
@@ -142,7 +135,7 @@ Intial lighthouse socres produced a performance of 75 and accessibilty of 96. Af
 
 ## Deployment
 
-### GitHub Pages TBC
+### GitHub Pages REPLACE WHEN DONE
 
 GitHub was the program used to deploy the the site, it was accomplished by using the following steps:
 
