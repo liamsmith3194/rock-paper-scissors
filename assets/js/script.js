@@ -7,22 +7,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
-                checkAnswer();
-            } else {
-                let userAnswer = this.getAttribute("data-type");
+            if (this.getAttribute("data-type") === "rock" || "paper" || "scissors") {
                 playGame(userAnswer);
+            } else {
+                let computerAnswer = this.getAttribute("data-type");
+                returnGame(computerAnswer);
             }
         });
     }
 
 });
-
-
-/**
- * The main game "loop", called when the script is first loaded
- * and after the user's answer has been processed
- */
 
 function playGame(userAnswer) {
 
@@ -102,7 +96,7 @@ function increaseRoundLost() {
  * The main game "loop", called when the script is first loaded
  * and after the user's answer has been processed
  */
-function returnGame(gameType) {
+function returnGame(computerAnswer) {
 
  
 
@@ -111,15 +105,15 @@ function returnGame(gameType) {
     let words = ['Rock', 'Paper', 'Scissors'];
     let word = words[Math.floor(Math.random() * words.length)];
 
- if (gameType === "rock") {
+ if (computerAnswer === "rock") {
      displayComputerRock(word);
- } else if (gameType === "paper") {
+ } else if (computerAnswer === "paper") {
      displayComputerScissors(word);
- } else if (gameType === "scissors" ) {
+ } else if (computerAnswer === "scissors" ) {
      displayComputerPaper(word);
  } else {
-     alert(`Unknown game type: ${gameType}`);
-     throw `Unknown game type: ${gameType}. Aborting!`;
+     alert(`Unknown game type: ${computerAnswer}`);
+     throw `Unknown game type: ${computerAnswer}. Aborting!`;
  }
 
 }
