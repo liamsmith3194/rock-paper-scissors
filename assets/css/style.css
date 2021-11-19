@@ -47,7 +47,7 @@ body {
 
 .player-name{
     font-size: 1.5rem;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .scoreboard {
@@ -179,30 +179,98 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start
 }
 
 /* --------- Media queries */
 
 @media (max-width: 768px) {
     
+    .user-answer-area{
+        margin: 0;
+        width: 170px;
+        margin-top: 10px;
+    }
+
+    .computer-answer-area{
+        margin: 0;
+        width: 170px;
+        margin-top: 10px;
+
+    }
+
+    #user-image{
+        width: 150%;
+        height: 150%;
+    }
+
+    #computer-image{
+        width: 150%;
+        height: 150%;
+    }
+
+    .buttons-area{
+        margin: 25px auto;
+    }
+
 }
 
 
 @media (max-width: 425px) {
 
+    .game-name{
+        font-size: 2rem;
+    }
+
+    .user-answer-area{
+        margin: 0;
+        width: 150px;
+        margin-top: 10px;
+    }
+
     #user-image{
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
     }
 
     #computer-image{
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .computer-answer-area{
+        margin: 0;
+        width: 150px;
+        margin-top: 10px;
+
+    }
+
+    .player-name{
+        font-size: 1.25rem;
+    }
+
+    .round-number{
+        font-size: 1.25rem;
     }
 
     .scoreboard{
-        margin-top: 50px;
+        margin-top: 110px;
+        font-size: 1rem;
+    }
+
+    .win {
+        color: #3EA62D;
+        font-size: 1rem;
+    }
+    
+    .lose {
+        color: #FF0000;
+        font-size: 1rem;
+    }
+    
+    .draw {
+        color: #000000;
+        font-size: 1rem;
     }
 
     .button-style{
@@ -211,17 +279,105 @@ body {
         margin: 0 25px;
     }
 
+    .buttons-area{
+        margin: 0 auto;
+    }
+
     .button-style::after{
         font-size: 1rem;
     }
 
-    .rules-area {
-        font-size: 1rem;        
-    
+    .rules {
+        font-size: 1rem;
+        margin-top: 25px;       
+    }
+}
+
+@media (max-width: 375px) {
+
+    .game-name{
+        font-size: 1.5rem;
+    }
+
+    .user-answer-area{
+        margin: 0;
+        width: 140px;
+
+    }
+
+    .computer-answer-area{
+        margin: 0;
+        width: 140px;
+    }
+
+    .player-name{
+        font-size: 1rem;
+        margin-top: 25px;
+    }
+
+    .round-number{
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 320px) {
-   
+
+    .game-name{
+        font-size: 1.25rem;
+    }
+
+    .player-name{
+        font-size: 0.8rem;
+    }
+
+    .round-number{
+        font-size: 0.8rem;
+    }
+
+    .user-answer-area{
+        margin: 0;
+        width: 120px;
+
+    }
+
+    .computer-answer-area{
+        margin: 0;
+        width: 120px;
+    }
+
+    .scoreboard{
+        margin-top: 110px;
+        font-size: 0.8rem;
+    }
+
+    .win {
+        color: #3EA62D;
+        font-size: 0.8rem;
+    }
+    
+    .lose {
+        color: #FF0000;
+        font-size: 0.8rem;
+    }
+    
+    .draw {
+        color: #000000;
+        font-size: 0.8rem;
+    }
+
+    .button-style{
+        width: 80px;
+        height: 80px;
+        margin: 0 15px;
+    }
+
+    .button-style::after{
+        font-size: 0.8rem;
+    }
+    
+
+    .rules {
+        font-size: 0.8rem;
+    }
 
 }

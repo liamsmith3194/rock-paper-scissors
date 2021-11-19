@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "rock" || "paper" || "scissors") {
-                playGame(userAnswer);
+            if (this.getAttribute("data-type") === "submit") {
+                compareAnswers();
             } else {
-                let computerAnswer = this.getAttribute("data-type");
-                returnGame(computerAnswer);
+                let userAnswer = this.getAttribute("data-type");
+                playGame(userAnswer);
             }
         });
     }
