@@ -156,6 +156,36 @@ body {
     color: white;
 }
 
+.button-style:focus {
+    background-color: #686868;
+    color: white;
+}
+
+.submit-style{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.25rem;
+    color: #686868;
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 7.5px solid;
+    border-color: #686868;
+    margin: 0 50px;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.submit-style:hover {
+    background-color: #686868;
+    color: white;
+}
+
+.submit-style:focus {
+    background-color: #686868;
+    color: white;
+}
+
 /* Rules/Instructions*/
 
 .rules-area {
@@ -179,7 +209,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start
+    justify-content: start;
+}
+
+.submit-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 /* --------- Media queries */
