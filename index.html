@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Rock, Paper, Scissors Shoot! - Interactive Game">
+    <meta name="keywords" content="PBPT, personal training, pt, weight loss, weight gain, injury recovery, motivation, determination, body, stronger, fitter, physical exercise, Northampton">
+    <link rel="manifest" href="/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, Paper, Scissors Shoot!</title>
 </head>
@@ -25,12 +23,12 @@
         <div class="column1">
             <div class="player-name">USER</div>
             <div class="user-answer-area">
-                <div class="user-answer"><img id="user-image" src="./assets/images/user-paper.png"></div>
+                <div class="user-answer"><img id="user-image" src="./assets/images/user-paper.png" alt="Default paper icon used for the computers' answer at startup."></div>
             </div>
         </div>
 
         <div class="column2">
-            <div class="round-number">Round Number 0</div>
+            <div class="round-number">Round Number 1</div>
             <div class="scoreboard">
                 <p class="win">Rounds Won 0</p>
                 <p class="draw">Rounds Drawn 0</p>
@@ -41,7 +39,7 @@
         <div class="column3">
             <div class="player-name">COMPUTER</div>
             <div class="computer-answer-area">
-                <div class="computer-answer"><img id="computer-image" src="./assets/images/computer-paper.png"></div>
+                <div class="computer-answer"><img id="computer-image" src="./assets/images/computer-paper.png" alt="Default paper icon used for the users' answer at startup."></div>
             </div>
         </div>
     </div>
@@ -49,19 +47,19 @@
     <div class="buttons-area">
         <div class="flex-container">
             <button data-type="rock" class="button-style">
-                <img src="./assets/images/user-rock.png">
+                <img src="./assets/images/user-rock.png" alt="Thumbnail used for Rock button">
             </button>
             <p class="rules">Rock Beats Paper</p> 
         </div>
         <div class="flex-container">
             <button data-type="paper" class="button-style">
-                <img src="./assets/images/user-paper.png">
+                <img src="./assets/images/user-paper.png" alt="Thumbnail used for Paper button">
             </button>
             <p class="rules">Paper Beats Rock</p> 
         </div>
         <div class="flex-container">
             <button data-type="scissors" class="button-style">
-                <img src="./assets/images/user-scissors.png">
+                <img src="./assets/images/user-scissors.png" alt="Thumbnail used for Scissors button">
             </button>
             <p class="rules">Scissors Beats Paper</p>
         </div>

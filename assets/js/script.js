@@ -1,10 +1,11 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons2 = document.getElementsByTagName("button");
 
-    for (let button of buttons2) {
+document.addEventListener("DOMContentLoaded", function () {
+    let delayComputerAnswer = document.getElementsByTagName("button");
+
+    for (let button of delayComputerAnswer) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
                 returnGame(computerAnswer);
@@ -49,18 +50,6 @@ function playGame(userAnswer) {
 }
 
 /**
- * Generates random answers from rock, paper or scissors to the console.
- */
-
-function randomcomputerAnswer() {
-
-    let computerAnswer = ["ROCK", "PAPER", "SCISSORS"];
-    return computerAnswer[Math.floor(Math.random("rock", "paper", "scissors") * 3)];
-
-}
-console.log(randomcomputerAnswer(3));
-
-/**
  * Generates answer selected by user and displays correct image.
  */
 
@@ -84,6 +73,12 @@ function displayUserScissors() {
 
 function compareAnswers() {
 
+}
+
+function increaseRoundNumber(){
+
+    let previousRound = parseInt(document.getElementById("round-number").innerText);
+    document.getElementById("round-number").innerText = ++previousRound;
 }
 
 function increaseRoundWon() {
