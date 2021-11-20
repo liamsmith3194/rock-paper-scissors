@@ -20,7 +20,7 @@ body {
     font-size: 1.5rem;
 }
 
-.container {
+.game-container {
     display: inline-block;
     width: 100%;
     height: auto;
@@ -162,18 +162,18 @@ body {
 }
 
 .submit-style{
+    width: 180px;
     font-family: "Bebas Neue", sans-serif;
     font-size: 1.25rem;
     color: #686868;
     text-transform: uppercase;
-    padding: 20px;
-    border-radius: 50%;
+    padding: 10px;
+    border-radius: 20px;
     background-color: white;
     border: 7.5px solid;
     border-color: #686868;
-    margin: 0 50px;
     transition: all 0.5s;
-    z-index: 1;
+    margin-top: 25px;
 }
 
 .submit-style:hover {
@@ -236,19 +236,19 @@ body {
     }
 
     .user-answer-area{
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .computer-answer-area{
-        margin-top: 80px;
+        margin-top: 40px;
     }
 
     .scoreboard{
-        margin-top: 250px;
+        margin-top: 200px;
     }
 
     .buttons-area{
-        margin-top: 80px;
+        margin-top: 60px;
     }
 
 }
@@ -369,6 +369,7 @@ body {
 @media (max-width: 320px) {
 
     .game-name{
+        margin-top: 10px;
         font-size: 1.25rem;
     }
 
@@ -381,18 +382,18 @@ body {
     }
 
     .user-answer-area{
-        margin-top: -20px;
+        margin-top: -40px;
         width: 120px;
 
     }
 
     .computer-answer-area{
-        margin-top: -20px;
+        margin-top: -40px;
         width: 120px;
     }
 
     .scoreboard{
-        margin-top: 90px;
+        margin-top: 70px;
         font-size: 0.8rem;
     }
 
@@ -419,11 +420,22 @@ body {
 
     .button-style::after{
         font-size: 0.8rem;
+        top: 0;
     }
-    
 
     .rules {
         font-size: 0.8rem;
+        margin: 10px;
+    }
+
+    .submit-container{
+        margin: 10px;
+    }
+    .submit-style{
+        width: 150px;
+        padding: 8px;
+        font-size: 0.8rem;
+        margin: 0;
     }
 
 }
