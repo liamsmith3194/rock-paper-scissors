@@ -142,7 +142,7 @@ body {
     z-index: 1;
 }
 
-.button-style::after{
+.button-style:after{
     content: attr(data-type);
     font-size: 1.25rem;
     letter-spacing: 2px;

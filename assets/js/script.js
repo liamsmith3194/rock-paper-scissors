@@ -1,17 +1,32 @@
-
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons2 = document.getElementsByTagName("button");
 
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
+    for (let button of buttons2) {
+        button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
-                compareAnswers();
+                returnGame(computerAnswer);
             } else {
                 let userAnswer = this.getAttribute("data-type");
                 playGame(userAnswer);
+            }
+        });
+    }
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-type") === "submit") {
+                playGame(userAnswer);
+            } else {
+                let computerAnswer = this.getAttribute("data-type");
+                returnGame(computerAnswer);
             }
         });
     }
@@ -24,7 +39,7 @@ function playGame(userAnswer) {
         displayUserRock();
     } else if (userAnswer === "paper") {
         displayUserPaper();
-    } else if (userAnswer === "scissors" ) {
+    } else if (userAnswer === "scissors") {
         displayUserScissors();
     } else {
         alert(`Unknown game type: ${userAnswer}`);
@@ -37,11 +52,11 @@ function playGame(userAnswer) {
  * Generates random answers from rock, paper or scissors to the console.
  */
 
- function randomcomputerAnswer(){
+function randomcomputerAnswer() {
 
     let computerAnswer = ["ROCK", "PAPER", "SCISSORS"];
     return computerAnswer[Math.floor(Math.random("rock", "paper", "scissors") * 3)];
-    
+
 }
 console.log(randomcomputerAnswer(3));
 
@@ -57,7 +72,7 @@ function displayUserRock() {
 function displayUserPaper() {
 
     document.getElementById('user-image').src = 'assets/images/user-paper.png';
-    
+
 }
 
 function displayUserScissors() {
@@ -67,7 +82,7 @@ function displayUserScissors() {
 
 
 
-function compareAnswers(){
+function compareAnswers() {
 
 }
 
@@ -75,21 +90,21 @@ function increaseRoundWon() {
 
     let roundsWon = parseInt(document.getElementsByClassName("win").innerText);
     document.getElementsByClassName("win").innerText = ++roundsWon;
-    
+
 }
 
 function increaseRoundDrawn() {
 
     let roundsDrawn = parseInt(document.getElementsByClassName("draw").innerText);
     document.getElementsByClassName("draw").innerText = ++roundsDrawn;
-    
+
 }
 
 function increaseRoundLost() {
 
     let roundslost = parseInt(document.getElementsByClassName("lose").innerText);
     document.getElementsByClassName("lose").innerText = ++roundslost;
-    
+
 }
 
 /**
@@ -98,30 +113,30 @@ function increaseRoundLost() {
  */
 function returnGame(computerAnswer) {
 
- 
 
- // The function name "playGame" will not work for both changing it will produce the computer answer keeping in changes the user answer.
-    
+
+    // The function name "playGame" will not work for both changing it will produce the computer answer keeping in changes the user answer.
+
     let words = ['Rock', 'Paper', 'Scissors'];
     let word = words[Math.floor(Math.random() * words.length)];
 
- if (computerAnswer === "rock") {
-     displayComputerRock(word);
- } else if (computerAnswer === "paper") {
-     displayComputerScissors(word);
- } else if (computerAnswer === "scissors" ) {
-     displayComputerPaper(word);
- } else {
-     alert(`Unknown game type: ${computerAnswer}`);
-     throw `Unknown game type: ${computerAnswer}. Aborting!`;
- }
+    if (word === "Rock") {
+        displayComputerRock(word);
+    } else if (word === "Paper") {
+        displayComputerScissors(word);
+    } else if (word === "Scissors") {
+        displayComputerPaper(word);
+    } else {
+        alert(`Unknown game type: ${computerAnswer}`);
+        throw `Unknown game type: ${computerAnswer}. Aborting!`;
+    }
 
 }
 
 function displayComputerRock() {
 
     document.getElementById('computer-image').src = 'assets/images/computer-rock.png';
-    
+
 }
 
 function displayComputerPaper() {

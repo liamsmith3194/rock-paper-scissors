@@ -2,15 +2,13 @@
 
 For the deployed Website [Click here.](https://liamsmith3194.github.io/rock-paper-scissors-shoot/)
 
-
 Welcome to Rock, Paper, Scissors Shoot! Based on the popular hand game, usually played between two people, in which each player simultaneously form one of three shapes with a hand. 
 
-![Hand Gestures](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/hand-gestures.png)
+![Icons & Rules](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/icons-rules.PNG)
 
 Responsively designed to disply on a range of devices from desktops to mobiles.
 
-REPLACE WHEN DONE
- ![Am I Responsive](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/am-i-responsive.PNG)
+ ![Am I Responsive](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/am-i-responsive.PNG)
 
 ## User Experience (UX)
 
@@ -78,12 +76,12 @@ Below is a brief overview of the website and it's main features.
 
 ## Testing
 
-### Validator Testing REPLACE WHEN DONE ###
+### Validator Testing ###
 
 The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fliamsmith3194.github.io%2Fpersonal-best-pt%2F)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliamsmith3194.github.io%2Fpersonal-best-pt)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fliamsmith3194.github.io%2Frock-paper-scissors-shoot%2F)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliamsmith3194.github.io%2Frock-paper-scissors-shoot)
 
 ### Lighthouse Testing ###
 
@@ -130,8 +128,6 @@ Intial lighthouse socres produced a performance of 75 and accessibilty of 96. Af
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
 ### Glitches TBC
-
-
 
 ## Deployment
 
@@ -180,13 +176,9 @@ GitHub was the program used to deploy the the site, it was accomplished by using
 
 -   The images used for the hand gestures were sourced from the World Rock Paper Scissors Association [(WRPSA)](https://wrpsa.com/the-official-rules-of-rock-paper-scissors)
 
-
 ### Mentions TBC
 
 -   My Mentor for answering my questions throughout.
 
 -   Slack users for constructive feedback and suggestions for improvement.
-
-    
-
 
