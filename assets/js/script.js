@@ -77,15 +77,15 @@ function returnGame(computerAnswer) {
 
     if (randomComputerAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
-        alert(`the computer played: ${randomComputerAnswer}`);
+        setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
 
     } else if (randomComputerAnswer === "Paper") {
         displayComputerPaper(randomComputerAnswer);
-        alert(`the computer played: ${randomComputerAnswer}`);
+        setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
 
     } else if (randomComputerAnswer === "Scissors") {
         displayComputerScissors(randomComputerAnswer);
-        alert(`the computer played: ${randomComputerAnswer}`);
+        setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
 
     } else {
         alert(`Unknown game type: ${computerAnswer}`);
@@ -140,29 +140,6 @@ function increaseRoundLost() {
 
     let roundslost = parseInt(document.getElementsByClassName("lose").innerText);
     document.getElementsByClassName("lose").innerText = ++roundslost;
-
-}
-
-
-/**
- * Checks the answer against the first element in
- * the returned calculateCorrectAnswer array
- */
- function checkAnswer() {
-
-    let userAnswer = parseInt(document.getElementById("answer-box").value);
-    let calculatedAnswer = calculateCorrectAnswer();
-    let isCorrect = userAnswer === calculatedAnswer[0];
-
-    if (isCorrect) {
-        alert("Hey! You got it right! :D");
-        incrementScore();
-    } else {
-        alert(`Awwww.... you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
-        incrementWrongAnswer();
-    }
-
-    runGame(calculatedAnswer[1]);
 
 }
 
