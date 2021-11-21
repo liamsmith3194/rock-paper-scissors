@@ -74,6 +74,7 @@ function returnGame(computerAnswer) {
 
     let options = ['Rock', 'Paper', 'Scissors'];
     let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
+    let userAnswer = document.getElementById('computer-image')
 
     if (randomComputerAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
@@ -117,10 +118,11 @@ function compareAnswers() {
 }
 
 function increaseRoundNumber(){
-
-    let previousRound = parseInt(document.getElementById("round-number").innerText);
-    document.getElementById("round-number").innerText = ++previousRound;
+        
+    let previousRound = parseInt(document.getElementById("round").innerText);
+    document.getElementById("round").innerText = ++previousRound;
 }
+
 
 function increaseRoundWon() {
 
