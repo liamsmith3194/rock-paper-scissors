@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function () {
+        button.addEventListener("click setTimeout(returnGame, 3000)", function () {
             if (this.getAttribute("data-type") === "submit") {
                 playGame(userAnswer);
             } else {
@@ -70,6 +70,43 @@ function displayUserScissors() {
 }
 
 
+function returnGame(computerAnswer) {
+
+    let options = ['Rock', 'Paper', 'Scissors'];
+    let option = options[Math.floor(Math.random() * options.length)];
+
+    if (option === "Rock") {
+        displayComputerRock(option);
+    } else if (option === "Paper") {
+        displayComputerScissors(option);
+    } else if (option === "Scissors") {
+        displayComputerPaper(option);
+    } else {
+        alert(`Unknown game type: ${computerAnswer}`);
+        throw `Unknown game type: ${computerAnswer}. Aborting!`;
+    }
+
+}
+
+function displayComputerRock() {
+
+    document.getElementById('computer-image').src = 'assets/images/computer-rock.png';
+
+}
+
+function displayComputerPaper() {
+
+    document.getElementById('computer-image').src = 'assets/images/computer-paper.png';
+
+}
+
+function displayComputerScissors() {
+
+    document.getElementById('computer-image').src = 'assets/images/computer-scissors.png';
+
+}
+
+
 
 function compareAnswers() {
 
@@ -102,46 +139,35 @@ function increaseRoundLost() {
 
 }
 
+
 /**
- * The main game "loop", called when the script is first loaded
- * and after the user's answer has been processed
+ * Checks the answer against the first element in
+ * the returned calculateCorrectAnswer array
  */
-function returnGame(computerAnswer) {
+ function checkAnswer() {
 
+    let userAnswer = parseInt(document.getElementById("answer-box").value);
+    let calculatedAnswer = calculateCorrectAnswer();
+    let isCorrect = userAnswer === calculatedAnswer[0];
 
-
-    // The function name "playGame" will not work for both changing it will produce the computer answer keeping in changes the user answer.
-
-    let words = ['Rock', 'Paper', 'Scissors'];
-    let word = words[Math.floor(Math.random() * words.length)];
-
-    if (word === "Rock") {
-        displayComputerRock(word);
-    } else if (word === "Paper") {
-        displayComputerScissors(word);
-    } else if (word === "Scissors") {
-        displayComputerPaper(word);
+    if (isCorrect) {
+        alert("Hey! You got it right! :D");
+        incrementScore();
     } else {
-        alert(`Unknown game type: ${computerAnswer}`);
-        throw `Unknown game type: ${computerAnswer}. Aborting!`;
+        alert(`Awwww.... you answered ${userAnswer}. The correct answer was ${calculatedAnswer[0]}!`);
+        incrementWrongAnswer();
     }
 
-}
-
-function displayComputerRock() {
-
-    document.getElementById('computer-image').src = 'assets/images/computer-rock.png';
+    runGame(calculatedAnswer[1]);
 
 }
 
-function displayComputerPaper() {
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
+function incrementScore() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-paper.png';
-
-}
-
-function displayComputerScissors() {
-
-    document.getElementById('computer-image').src = 'assets/images/computer-scissors.png';
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 
 }
