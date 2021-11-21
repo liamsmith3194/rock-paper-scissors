@@ -73,14 +73,20 @@ function displayUserScissors() {
 function returnGame(computerAnswer) {
 
     let options = ['Rock', 'Paper', 'Scissors'];
-    let option = options[Math.floor(Math.random() * options.length)];
+    let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
 
-    if (option === "Rock") {
-        displayComputerRock(option);
-    } else if (option === "Paper") {
-        displayComputerScissors(option);
-    } else if (option === "Scissors") {
-        displayComputerPaper(option);
+    if (randomComputerAnswer === "Rock") {
+        displayComputerRock(randomComputerAnswer);
+        alert(`the computer played: ${randomComputerAnswer}`);
+
+    } else if (randomComputerAnswer === "Paper") {
+        displayComputerPaper(randomComputerAnswer);
+        alert(`the computer played: ${randomComputerAnswer}`);
+
+    } else if (randomComputerAnswer === "Scissors") {
+        displayComputerScissors(randomComputerAnswer);
+        alert(`the computer played: ${randomComputerAnswer}`);
+
     } else {
         alert(`Unknown game type: ${computerAnswer}`);
         throw `Unknown game type: ${computerAnswer}. Aborting!`;
@@ -105,8 +111,6 @@ function displayComputerScissors() {
     document.getElementById('computer-image').src = 'assets/images/computer-scissors.png';
 
 }
-
-
 
 function compareAnswers() {
 
