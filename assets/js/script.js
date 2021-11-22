@@ -74,7 +74,7 @@ function returnGame(computerAnswer) {
 
     let options = ['Rock', 'Paper', 'Scissors'];
     let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
-    let userAnswer = document.getElementById('computer-image')
+    let userAnswer = document.getElementById('user-answer');
 
     if (randomComputerAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
@@ -117,33 +117,43 @@ function compareAnswers() {
 
 }
 
-function increaseRoundNumber(){
-        
-    let previousRound = parseInt(document.getElementById("round").innerText);
-    document.getElementById("round").innerText = ++previousRound;
-}
+var roundNumber = 1;
+
+    function increaseRoundNumber() {
+        if (roundNumber < 10000) {
+            roundNumber++;
+        }
+        document.getElementById("round").innerHTML = roundNumber;
+    }
+
+var roundsWon = 0;
+
+    function increaseRoundsWon() {
+        if (roundsWon < 10000) {
+            roundsWon++;
+        }
+        document.getElementById("win").innerHTML = roundsWon;
+    }
+
+var roundsDrawn = 0;
+
+    function increaseRoundsDrawn() {
+        if (roundsDrawn < 10000) {
+            roundsDrawn++;
+        }
+        document.getElementById("draw").innerHTML = roundsDrawn;
+    }
+
+var roundsLost = 0;
+
+    function increaseRoundsLost() {
+        if (roundsLost < 10000) {
+            roundsLost++;
+        }
+        document.getElementById("loss").innerHTML = roundsLost;
+    }
 
 
-function increaseRoundWon() {
-
-    let roundsWon = parseInt(document.getElementsByClassName("win").innerText);
-    document.getElementsByClassName("win").innerText = ++roundsWon;
-
-}
-
-function increaseRoundDrawn() {
-
-    let roundsDrawn = parseInt(document.getElementsByClassName("draw").innerText);
-    document.getElementsByClassName("draw").innerText = ++roundsDrawn;
-
-}
-
-function increaseRoundLost() {
-
-    let roundslost = parseInt(document.getElementsByClassName("lose").innerText);
-    document.getElementsByClassName("lose").innerText = ++roundslost;
-
-}
 
 /**
  * Gets the current score from the DOM and increments it by 1

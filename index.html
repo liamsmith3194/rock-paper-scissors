@@ -33,11 +33,19 @@
         </div>
 
         <div class="column2">
-            <div class="round-number">Round Number<span id="round">1</span></div>
+            <div class="round-number">Round Number <span id="round">1</span></div>
+            <input type="button" id="inc" onclick="increaseRoundNumber()"/>
+
             <div class="scoreboard">
-                <p class="win">Rounds Won 0</p>
-                <p class="draw">Rounds Drawn 0</p>
-                <p class="lose">Rounds Lost 0</p>
+                <p class="win">Rounds Won <span id="win">0</span></p>
+                <input type="button" id="inc" onclick="increaseRoundsWon()"/>
+
+                <p class="draw">Rounds Drawn <span id="draw">0</span></p>
+                <input type="button" id="inc" onclick="increaseRoundsDrawn()"/>
+
+                <p class="lose">Rounds Lost <span id="loss">0</span></p>
+                <input type="button" id="inc" onclick="increaseRoundsLost()"/>
+
             </div>
         </div>
 
