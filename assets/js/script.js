@@ -74,8 +74,6 @@ function returnGame(computerAnswer) {
 
     let options = ['Rock', 'Paper', 'Scissors'];
     let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
-    let userAnswer = parseInt(document.getElementById("answer-box").value);
-
 
     if (randomComputerAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
