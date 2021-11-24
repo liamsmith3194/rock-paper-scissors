@@ -74,19 +74,26 @@ function returnGame(computerAnswer) {
 
     let options = ['Rock', 'Paper', 'Scissors'];
     let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
-    let userAnswer = document.getElementById('user-answer');
+    let userAnswer = parseInt(document.getElementById("answer-box").value);
+
 
     if (randomComputerAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
+        setTimeout(increaseRoundNumber(), 5000);
+
 
     } else if (randomComputerAnswer === "Paper") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
+        setTimeout(increaseRoundNumber(), 5000);
+
 
     } else if (randomComputerAnswer === "Scissors") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
+        setTimeout(increaseRoundNumber(), 5000);
+
 
     } else {
         alert(`Unknown game type: ${computerAnswer}`);
@@ -115,12 +122,23 @@ function displayComputerScissors() {
 
 function compareAnswers() {
 
+    if (userAnswer === "rock") {
+        alert(`draw`);
+    } else if (userAnswer === "rock") {
+        alert(`lose`);
+    } else if (userAnswer === "rock") {
+        alert(`win`);
+    } else {
+    alert(`Unknown game type: ${computerAnswer}`);
+    throw `Unknown game type: ${computerAnswer}. Aborting!`;
+    }
+
 }
 
 var roundNumber = 1;
 
     function increaseRoundNumber() {
-        if (roundNumber < 10000) {
+        if (roundNumber < 1000000) {
             roundNumber++;
         }
         document.getElementById("round").innerHTML = roundNumber;
@@ -129,7 +147,7 @@ var roundNumber = 1;
 var roundsWon = 0;
 
     function increaseRoundsWon() {
-        if (roundsWon < 10000) {
+        if (roundsWon < 1000000) {
             roundsWon++;
         }
         document.getElementById("win").innerHTML = roundsWon;
@@ -138,7 +156,7 @@ var roundsWon = 0;
 var roundsDrawn = 0;
 
     function increaseRoundsDrawn() {
-        if (roundsDrawn < 10000) {
+        if (roundsDrawn < 1000000) {
             roundsDrawn++;
         }
         document.getElementById("draw").innerHTML = roundsDrawn;
@@ -147,20 +165,8 @@ var roundsDrawn = 0;
 var roundsLost = 0;
 
     function increaseRoundsLost() {
-        if (roundsLost < 10000) {
+        if (roundsLost < 1000000) {
             roundsLost++;
         }
         document.getElementById("loss").innerHTML = roundsLost;
     }
-
-
-
-/**
- * Gets the current score from the DOM and increments it by 1
- */
-function incrementScore() {
-
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
-
-}

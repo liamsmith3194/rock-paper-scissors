@@ -156,11 +156,6 @@ body {
     color: white;
 }
 
-.button-style:focus {
-    background-color: #686868;
-    color: white;
-}
-
 .submit-style{
     width: 180px;
     font-family: "Bebas Neue", sans-serif;
