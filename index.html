@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +17,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock, Paper, Scissors Shoot!</title>
 </head>
-
 <body>
     <div class="game-name">
         Rock, Paper, Scissors <br> Shoot!
     </div>
-    ​
     <div class="game-container">
         <div class="column1">
             <div class="player-name">USER</div>
@@ -33,23 +29,14 @@
                         alt="Default paper icon used for the users' answer at startup."></div>
             </div>
         </div>
-        ​
         <div class="column2">
             <div class="round-number">Round Number <span id="round">1</span></div>
-            ​
             <section class="scoreboard">
                 <p class="win">Rounds Won <span id="win">0</span>
-                    <input type="button" id="inc" onclick="increaseRoundsWon()" />
-                    ​
                     <p class="draw">Rounds Drawn <span id="draw">0</span>
-                        <input type="button" id="inc" onclick="increaseRoundsDrawn()" />
-                        ​
-                        <p class="lose">Rounds Lost <span id="loss">0</span>
-                            <input type="button" id="inc" onclick="increaseRoundsLost()" />
-                            ​
+                        <p class="lose">Rounds Lost <span id="loss">0</span>   ​
             </section>
         </div>
-        ​
         <div class="column3">
             <div class="player-name">COMPUTER</div>
             <div class="computer-answer-area">
@@ -58,7 +45,6 @@
             </div>
         </div>
     </div>
-    ​
     <div class="buttons-area">
         <div class="flex-container">
             <button data-type="Rock" class="button-style">
@@ -78,10 +64,7 @@
             </button>
             <p class="rules">Scissors Beats Paper</p>
         </div>
-
     </div>
-    ​
     <script src="assets/js/script.js"></script>
 </body>
-
 </html>

@@ -52,33 +52,113 @@ function displayUserScissors() {
     document.getElementById('user-image').src = 'assets/images/user-scissors.png';
 }
 
-
 function returnGame(userAnswer) {
 
     let options = ['Rock', 'Paper', 'Scissors'];
     let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
-    if (randomComputerAnswer === "Rock") {
+
+    if (randomComputerAnswer === "Rock" && userAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer}`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
+            increaseRoundNumber()
+            increaseRoundsDrawn()
+
         }, 1000);
-    
-    } else if (randomComputerAnswer === "Paper") {
+
+    } else if (randomComputerAnswer === "Rock" && userAnswer === "Paper") {
+        displayComputerRock(randomComputerAnswer);
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou win!`);
+            increaseRoundNumber()
+            increaseRoundsWon()
+
+        }, 1000);
+
+    } else if (randomComputerAnswer === "Rock" && userAnswer === "Scissors") {
+        displayComputerRock(randomComputerAnswer);
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
+            increaseRoundNumber()
+            increaseRoundsLost()
+
+        }, 1000);
+
+
+    } else if (randomComputerAnswer === "Paper" && userAnswer === "Rock") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer}`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
+            increaseRoundNumber()
+            increaseRoundsLost()
+
         }, 1000);
-    
-    } else if (randomComputerAnswer === "Scissors") {
+
+    } else if (randomComputerAnswer === "Paper" && userAnswer === "Paper") {
+        displayComputerPaper(randomComputerAnswer);
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
+            increaseRoundNumber()
+            increaseRoundsDrawn()
+
+        }, 1000);
+
+    } else if (randomComputerAnswer === "Paper" && userAnswer === "Scissors") {
+        displayComputerPaper(randomComputerAnswer);
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou win!`);
+            increaseRoundNumber()
+            increaseRoundsWon()
+
+        }, 1000);
+
+    } else if (randomComputerAnswer === "Scissors" && userAnswer === "Rock") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer}`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou win!`);
             increaseRoundNumber()
+            increaseRoundsWon()
+
         }, 1000);
-    
+
+    } else if (randomComputerAnswer === "Scissors" && userAnswer === "Paper") {
+        displayComputerScissors(randomComputerAnswer);
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
+            increaseRoundNumber()
+            increaseRoundsLost()
+
+        }, 1000);
+
+    } else if (randomComputerAnswer === "Scissors" && userAnswer === "Scissors") {
+        displayComputerScissors(randomComputerAnswer);
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
+            increaseRoundNumber()
+            increaseRoundsDrawn()
+
+        }, 1000);
+
+
+
     } else {
         alert(`Unknown game type: `);
         throw `Unknown game type: . Aborting!`;
+    }
+
+}
+
+function compareAnswers(userAnswer) {
+
+    if (userAnswer === "Rock") {
+        increaseRoundsDrawn()
+    } else if (userAnswer === "Paper") {
+        increaseRoundsWon()
+    } else if (userAnswer === "Scissors") {
+        increaseRoundsLost()
+    } else {
+        alert(`Unknown game type: ${computerAnswer}`);
+        throw `Unknown game type: ${computerAnswer}. Aborting!`;
     }
 }
 
@@ -98,20 +178,6 @@ function displayComputerScissors() {
 
     document.getElementById('computer-image').src = 'assets/images/computer-scissors.png';
 
-}
-
-function compareAnswers() {
-
-    if (userAnswer === "Rock") {
-        alert(`draw`);
-    } else if (userAnswer === "Rock") {
-        alert(`lose`);
-    } else if (userAnswer === "Rock") {
-        alert(`win`);
-    } else {
-        alert(`Unknown game type: ${computerAnswer}`);
-        throw `Unknown game type: ${computerAnswer}. Aborting!`;
-    }
 }
 
 var roundNumber = 1;
