@@ -156,33 +156,6 @@ body {
     color: white;
 }
 
-.submit-style{
-    width: 180px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.25rem;
-    letter-spacing: 2px;
-
-    color: #686868;
-    text-transform: uppercase;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: white;
-    border: 7.5px solid;
-    border-color: #686868;
-    transition: all 0.5s;
-    margin-top: 25px;
-}
-
-.submit-style:hover {
-    background-color: #686868;
-    color: white;
-}
-
-.submit-style:focus {
-    background-color: #686868;
-    color: white;
-}
-
 /* Rules/Instructions*/
 
 .rules-area {

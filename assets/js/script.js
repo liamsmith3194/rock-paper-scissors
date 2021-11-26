@@ -3,44 +3,27 @@
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let delayComputerAnswer = document.getElementsByTagName("button");
-
-    for (let button of delayComputerAnswer) {
+    let allButtons = document.getElementsByTagName("button");
+    for (let button of allButtons) {
         button.addEventListener("click", function () {
-            if (this.getAttribute("data-type") === "submit") {
-                returnGame(computerAnswer);
-            } else {
-                let userAnswer = this.getAttribute("data-type");
-                playGame(userAnswer);
-            }
+            let userAnswer = this.getAttribute("data-type");
+            playGame(userAnswer);
+            setTimeout(function () {
+                returnGame(userAnswer)
+            }, 3000)
         });
     }
-
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
 
-    for (let button of buttons) {
-        button.addEventListener("click setTimeout(returnGame, 3000)", function () {
-            if (this.getAttribute("data-type") === "submit") {
-                playGame(userAnswer);
-            } else {
-                let computerAnswer = this.getAttribute("data-type");
-                returnGame(computerAnswer);
-            }
-        });
-    }
-
-});
 
 function playGame(userAnswer) {
 
-    if (userAnswer === "rock") {
+    if (userAnswer === "Rock") {
         displayUserRock();
-    } else if (userAnswer === "paper") {
+    } else if (userAnswer === "Paper") {
         displayUserPaper();
-    } else if (userAnswer === "scissors") {
+    } else if (userAnswer === "Scissors") {
         displayUserScissors();
     } else {
         alert(`Unknown game type: ${userAnswer}`);
@@ -70,34 +53,33 @@ function displayUserScissors() {
 }
 
 
-function returnGame(computerAnswer) {
+function returnGame(userAnswer) {
 
     let options = ['Rock', 'Paper', 'Scissors'];
     let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
-
     if (randomComputerAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
-        setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
-        setTimeout(increaseRoundNumber(), 5000);
-
-
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer}`);
+        }, 1000);
+    
     } else if (randomComputerAnswer === "Paper") {
         displayComputerPaper(randomComputerAnswer);
-        setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
-        setTimeout(increaseRoundNumber(), 5000);
-
-
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer}`);
+        }, 1000);
+    
     } else if (randomComputerAnswer === "Scissors") {
         displayComputerScissors(randomComputerAnswer);
-        setTimeout(function(){ alert(`You played: ${userAnswer}\nThe computer played: ${randomComputerAnswer}`); }, 1000);
-        setTimeout(increaseRoundNumber(), 5000);
-
-
+        setTimeout(function () {
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer}`);
+            increaseRoundNumber()
+        }, 1000);
+    
     } else {
-        alert(`Unknown game type: ${computerAnswer}`);
-        throw `Unknown game type: ${computerAnswer}. Aborting!`;
+        alert(`Unknown game type: `);
+        throw `Unknown game type: . Aborting!`;
     }
-
 }
 
 function displayComputerRock() {
@@ -120,51 +102,50 @@ function displayComputerScissors() {
 
 function compareAnswers() {
 
-    if (userAnswer === "rock") {
+    if (userAnswer === "Rock") {
         alert(`draw`);
-    } else if (userAnswer === "rock") {
+    } else if (userAnswer === "Rock") {
         alert(`lose`);
-    } else if (userAnswer === "rock") {
+    } else if (userAnswer === "Rock") {
         alert(`win`);
     } else {
-    alert(`Unknown game type: ${computerAnswer}`);
-    throw `Unknown game type: ${computerAnswer}. Aborting!`;
+        alert(`Unknown game type: ${computerAnswer}`);
+        throw `Unknown game type: ${computerAnswer}. Aborting!`;
     }
-
 }
 
 var roundNumber = 1;
 
-    function increaseRoundNumber() {
-        if (roundNumber < 1000000) {
-            roundNumber++;
-        }
-        document.getElementById("round").innerHTML = roundNumber;
+function increaseRoundNumber() {
+    if (roundNumber < 1000000) {
+        roundNumber++;
     }
+    document.getElementById("round").innerHTML = roundNumber;
+}
 
 var roundsWon = 0;
 
-    function increaseRoundsWon() {
-        if (roundsWon < 1000000) {
-            roundsWon++;
-        }
-        document.getElementById("win").innerHTML = roundsWon;
+function increaseRoundsWon() {
+    if (roundsWon < 1000000) {
+        roundsWon++;
     }
+    document.getElementById("win").innerHTML = roundsWon;
+}
 
 var roundsDrawn = 0;
 
-    function increaseRoundsDrawn() {
-        if (roundsDrawn < 1000000) {
-            roundsDrawn++;
-        }
-        document.getElementById("draw").innerHTML = roundsDrawn;
+function increaseRoundsDrawn() {
+    if (roundsDrawn < 1000000) {
+        roundsDrawn++;
     }
+    document.getElementById("draw").innerHTML = roundsDrawn;
+}
 
 var roundsLost = 0;
 
-    function increaseRoundsLost() {
-        if (roundsLost < 1000000) {
-            roundsLost++;
-        }
-        document.getElementById("loss").innerHTML = roundsLost;
+function increaseRoundsLost() {
+    if (roundsLost < 1000000) {
+        roundsLost++;
     }
+    document.getElementById("loss").innerHTML = roundsLost;
+}
