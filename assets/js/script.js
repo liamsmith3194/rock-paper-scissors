@@ -69,7 +69,7 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Rock" && userAnswer === "Paper") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou win!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber()
             increaseRoundsWon()
 
@@ -106,7 +106,7 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Scissors") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou win!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber()
             increaseRoundsWon()
 
@@ -115,7 +115,7 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Rock") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou win!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber()
             increaseRoundsWon()
 
@@ -146,20 +146,6 @@ function returnGame(userAnswer) {
         throw `Unknown game type: . Aborting!`;
     }
 
-}
-
-function compareAnswers(userAnswer) {
-
-    if (userAnswer === "Rock") {
-        increaseRoundsDrawn()
-    } else if (userAnswer === "Paper") {
-        increaseRoundsWon()
-    } else if (userAnswer === "Scissors") {
-        increaseRoundsLost()
-    } else {
-        alert(`Unknown game type: ${computerAnswer}`);
-        throw `Unknown game type: ${computerAnswer}. Aborting!`;
-    }
 }
 
 function displayComputerRock() {
@@ -195,7 +181,7 @@ function increaseRoundsWon() {
     if (roundsWon < 1000000) {
         roundsWon++;
     }
-    document.getElementById("win").innerHTML = roundsWon;
+    document.getElementById("won").innerHTML = roundsWon;
 }
 
 var roundsDrawn = 0;
@@ -215,3 +201,10 @@ function increaseRoundsLost() {
     }
     document.getElementById("loss").innerHTML = roundsLost;
 }
+
+function focusInput() {
+    document.getElementById('myText').focus();
+  }
+  function blurInput() {
+    document.getElementById('myText').blur();
+  }

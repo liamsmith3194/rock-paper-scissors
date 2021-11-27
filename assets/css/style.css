@@ -9,7 +9,7 @@ body {
 /* --------- Heading */
 
 .game-name{
-    margin-top: 75px;
+    margin-top: 35px;
     font-size: 2.5rem;
     letter-spacing: 5px;
 }
@@ -154,6 +154,15 @@ body {
 .button-style:hover {
     background-color: #686868;
     color: white;
+}
+
+.button-style:focus {
+    background-color: white;
+    border: 7.5px solid;
+    border-color: #686868;
+    width: 140px;
+    height: 140px;
+
 }
 
 /* Rules/Instructions*/
