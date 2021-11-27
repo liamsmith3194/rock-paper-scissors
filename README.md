@@ -43,17 +43,30 @@ Responsively designed to disply on a range of devices from desktops to mobiles.
 
     ![Figma Mobile Wireframe](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/mobile-wireframe.PNG)
     
-## Features REPLACE WHEN DONE
+## Features
 Below is a brief overview of the website and it's main features.
 
--   ### Landing Page ###
+### Fun animated images
 
-    -   Clean header with a navigation bar on the right side and bold logo on the left providing typography contrast. The header remains at the top of each page as you scroll down or use the provided links.
+-   hgj
 
+### Interactive buttons
 
-    -   Hero image with tag-line across a banner with opacity to make the offer stand out.
+-   hgj
+![Buttons](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/icons-rules.PNG)
 
-    ![Landing Page](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/header.PNG)
+### Alert message to confirm round outcome
+
+-   hgj
+
+### Automatically updating scoreboard & round number
+
+-   jghjh
+
+## Future Features
+
+-   User selects how many rounds to play, best of 5 etc.
+-   
 
 ## Technologies
 
@@ -76,24 +89,24 @@ Below is a brief overview of the website and it's main features.
 
 ## Testing
 
-### Validator Testing ###
+### Validator Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fliamsmith3194.github.io%2Frock-paper-scissors-shoot%2F)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliamsmith3194.github.io%2Frock-paper-scissors-shoot)
 
-### Lighthouse Testing ###
+### Lighthouse Testing
 
-Intial lighthouse socres produced a performance of 75 and accessibilty of 96. After exporting all images to webp files and giving the iframe element a title it improved to 94 (mobile) and 98 respectively.
+Intial lighthouse socres produced a performance of 100, accessibilty of 94 but only a score of 87 for best practices. After exporting all images to webp files and giving the iframe element a title it improved to 94 (mobile) and 98 respectively.
 
 -   Mobile Results
 
-![Lighthouse Mobile Results](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/lighthouse-mobile.PNG)
+![Lighthouse Mobile Results](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/lighthouse-mobile.PNG)
 
 -   Desktop Results
 
-![Lighthouse Desktop Results](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/lighthouse-desktop.PNG)
+![Lighthouse Desktop Results](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/lighthouse-desktop.PNG)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -127,46 +140,47 @@ Intial lighthouse socres produced a performance of 75 and accessibilty of 96. Af
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-### Glitches TBC
+### Glitches
+
+-   Focus pseduo class doesn't work on mobile phones when a button selected.
 
 ## Deployment
 
-### GitHub Pages REPLACE WHEN DONE
+### GitHub Pages
 
 GitHub was the program used to deploy the the site, it was accomplished by using the following steps:
 
 1. Log in to GitHub and select the GitHub Repository.
 
-![GitHub Repository](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-repo.PNG)
+![GitHub Repository](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/github-repo.PNG)
 
 2. At the top of the page towards the middle of the screen you will see a "Settings" menu item with a cog icon.
 
-![GitHub Settings](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-settings.PNG)
+![GitHub Settings](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/github-settings.PNG)
 3. On the left hand side is a vertical list locate and click "Pages".
 
-![GitHub Pages](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-pages.PNG)
+![GitHub Pages](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/github-pages.PNG)
 
 4. Under the "Source" sub-heading, click on the dropdown by default "None" and choose "main".
 
-![GitHub Source](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-source.PNG)
+![GitHub Source](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/github-source.PNG)
 
 5. Click "Save"
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
 
-![GitHub Publish](https://raw.githubusercontent.com/liamsmith3194/personal-best-pt/main/assets/readme-images/github-published.PNG)
+![GitHub Publish](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/github-published.PNG)
 
 ## References
 
-### Code TBC
+### Code
 
--   Love Maths (Walkthrough Project) 
+-   Generating a random word (Rock, Paper or Scissors) from the console - Love Maths (Walkthrough Project)
 
--   Below is a screenshot showing the result **before** the StackOverflow Code:
+-   Transition CSS - Animates the hover pseduo on the buttons - Love Maths (Walkthrough Project)
 
--   The testimonials page was created using Flexbox from [CSS-Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). This was used to enable the tablet screen size (and smaller) to view the testimonials as a list and one column. 
-
--   The blurred shadow effect used on the testimonials was taken from [w3schools](https://www.w3schools.com/cssref/css3_pr_box-shadow.asp), but amended to the developers criteria in terms of colour, depth and strength.
+-   Delay function - Used to display the computer's answer 3 seconds after the user has made their choice.
+A futher 1 second delay before alert message informs the user of round result. - [Stack Overflow](https://stackoverflow.com/questions/16873889/how-to-create-javascript-delay-function)
 
 ### Content
 
@@ -180,5 +194,5 @@ GitHub was the program used to deploy the the site, it was accomplished by using
 
 -   My Mentor for answering my questions throughout.
 
--   Slack users for constructive feedback and suggestions for improvement.
+-   Slack users for constructive feedback, suggestions for improvement and video calls.
 

@@ -165,6 +165,15 @@ body {
 
 }
 
+.button-style:active {
+    background-color: white;
+    border: 7.5px solid;
+    border-color: #686868;
+    width: 140px;
+    height: 140px;
+
+}
+
 /* Rules/Instructions*/
 
 .rules-area {
@@ -189,13 +198,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-}
-
-.submit-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
 }
 
 /* --------- Media queries */

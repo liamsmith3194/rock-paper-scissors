@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let userAnswer = this.getAttribute("data-type");
             playGame(userAnswer);
             setTimeout(function () {
-                returnGame(userAnswer)
-            }, 3000)
+                returnGame(userAnswer);
+            }, 3000);
         });
     }
 });
@@ -61,27 +61,24 @@ function returnGame(userAnswer) {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
-            increaseRoundNumber()
-            increaseRoundsDrawn()
-
+            increaseRoundNumber();
+            increaseRoundsDrawn();
         }, 1000);
 
     } else if (randomComputerAnswer === "Rock" && userAnswer === "Paper") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
-            increaseRoundNumber()
-            increaseRoundsWon()
-
+            increaseRoundNumber();
+            increaseRoundsWon();
         }, 1000);
 
     } else if (randomComputerAnswer === "Rock" && userAnswer === "Scissors") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
-            increaseRoundNumber()
-            increaseRoundsLost()
-
+            increaseRoundNumber();
+            increaseRoundsLost();
         }, 1000);
 
 
@@ -89,57 +86,49 @@ function returnGame(userAnswer) {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
-            increaseRoundNumber()
-            increaseRoundsLost()
-
+            increaseRoundNumber();
+            increaseRoundsLost();
         }, 1000);
 
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Paper") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
-            increaseRoundNumber()
-            increaseRoundsDrawn()
-
+            increaseRoundNumber();
+            increaseRoundsDrawn();
         }, 1000);
 
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Scissors") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
-            increaseRoundNumber()
-            increaseRoundsWon()
-
+            increaseRoundNumber();
+            increaseRoundsWon();
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Rock") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
-            increaseRoundNumber()
-            increaseRoundsWon()
-
+            increaseRoundNumber();
+            increaseRoundsWon();
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Paper") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
-            increaseRoundNumber()
-            increaseRoundsLost()
-
+            increaseRoundNumber();
+            increaseRoundsLost();
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Scissors") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
-            increaseRoundNumber()
-            increaseRoundsDrawn()
-
+            increaseRoundNumber();
+            increaseRoundsDrawn();
         }, 1000);
-
-
 
     } else {
         alert(`Unknown game type: `);
@@ -201,10 +190,3 @@ function increaseRoundsLost() {
     }
     document.getElementById("loss").innerHTML = roundsLost;
 }
-
-function focusInput() {
-    document.getElementById('myText').focus();
-  }
-  function blurInput() {
-    document.getElementById('myText').blur();
-  }
