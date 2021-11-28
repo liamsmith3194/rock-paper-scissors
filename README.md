@@ -52,21 +52,33 @@ Below is a brief overview of the website and it's main features.
 
 ### Interactive buttons
 
--   hgj
-![Buttons](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/icons-rules.PNG)
+-   Removing the background behind the images has made the buttons look very professional especially when hovered over with the white background filling in around the icon in a slightly lighter shade of grey.
+![Buttons Hover Pseudo](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/interactive-buttons-hover.PNG)
+
+-   When a button is clicked that button increases in size to show the user that their selection has been identified and the computer is randomly selecting it's answer in return. 
+![Buttons Focus Pseudo](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/interactive-buttons-focus.PNG)
 
 ### Alert message to confirm round outcome
 
--   hgj
+-   After the 1 second delay the alert message appears and summarises the round for example:
+    -   You played: Rock
+    -   The computer played: Rock
+    -   It's a draw!
 
-### Automatically updating scoreboard & round number
+![Won](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/alert-message-won.PNG)
 
--   jghjh
+![Drawn](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/alert-message-draw.PNG)
+
+![Lost](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/alert-message-lost.PNG)
+
+### Automatic updating scoreboard & round number
+
+![Scoreboard](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors-shoot/main/assets/readme-images/scoreboard.PNG)
 
 ## Future Features
 
 -   User selects how many rounds to play, best of 5 etc.
--   
+-   Display round outcome out of alert message.
 
 ## Technologies
 
@@ -98,7 +110,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to ensure ther
 
 ### Lighthouse Testing
 
-Intial lighthouse socres produced a performance of 100, accessibilty of 94 but only a score of 87 for best practices. After exporting all images to webp files and giving the iframe element a title it improved to 94 (mobile) and 98 respectively.
+Initial lighthouse socres produced a performance of 100, accessibilty of 94 but only a score of 87 for best practices. After exporting all images to webp files and giving the iframe element a title it improved to 94 (mobile) and 98 respectively.
 
 -   Mobile Results
 
@@ -110,28 +122,23 @@ Intial lighthouse socres produced a performance of 100, accessibilty of 94 but o
 
 ### Testing User Stories from User Experience (UX) Section
 
--   #### First Time Visitor Goals REPLACE WHEN DONE
+-   #### First Time Visitor Goals
 
     Q1. As a first time vistor, I want a clear understanding of the interactive game on show. 
 
-    -   As soon as users enter the site, they are drawn to the hero image spread across the width of the screen with the tag line offer.
-    -   Scrolling down there is a clear message showing what services are available from the use of clipped images and opacity captions.
-    -   The about section is presented cleanly, split into three sections with a nice use of icons around the qualifications. 
-    -   Immediately the use of shadow around the testimonial boxes stands out. A simple name and quote layout works well.
-    -   Again the subtle use of opcaity is the driving force behind the contact page with the main form standing out in white. The change of colour on hover is a nice touch especially on the submit button.
+    -   A large majority of the worlds population have played or understand how rock, paper scissors is played. As soon as users enter the site, it is abundently clear what the game is and how to play it. The default icons on show increase the clarity.
 
     Q2. As a first time vistor, I want a brief description of the rules in order to win the game.
 
-    -   This is very easy to see from the services section using the images and the short descriptions.
-    -   The contact form also links to the services on offer with the 'Goal' dropdown.
+    -   The rules are very clear to see labelled up beneath the interactive buttons. "ROCK BEATS SCISSORS" etc.
 
     Q3. As a first time vistor, I want to have live scoring round by round.
 
-    -   There is no content from the site that would offend or make any user feel uncomfortable.
+    -   Round by round after the alert message of the outcome the round number is updated along with the tally of rounds won, rounds drawn or rounds lost, all looking from the users perspective.
 
     Q4. As a first time vistor, I want to enjoy the game and come back again and again.
 
-    -   At the bottom of the site, there is a map spread across the whole screen showing the location of company. This also has the option to show directions using the in-built link which opens in a new tab.   
+    -   The way the game is ran is so easy to play and understand. I have found myself saying "one more round" constantly, just to finish on a win and beating the computer.   
 
 ### Continued Testing REPLACE WHEN DONE
 
@@ -142,7 +149,7 @@ Intial lighthouse socres produced a performance of 100, accessibilty of 94 but o
 
 ### Glitches
 
--   Focus pseduo class doesn't work on mobile phones when a button selected.
+-   Focus pseduo class doesn't work on mobile phones when a button is selected.
 
 ## Deployment
 
@@ -190,7 +197,7 @@ A futher 1 second delay before alert message informs the user of round result. -
 
 -   The images used for the hand gestures were sourced from the World Rock Paper Scissors Association [(WRPSA)](https://wrpsa.com/the-official-rules-of-rock-paper-scissors)
 
-### Mentions TBC
+### Mentions
 
 -   My Mentor for answering my questions throughout.
 

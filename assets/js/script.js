@@ -170,7 +170,7 @@ function increaseRoundsWon() {
     if (roundsWon < 1000000) {
         roundsWon++;
     }
-    document.getElementById("won").innerHTML = roundsWon;
+    document.getElementById("win").innerHTML = roundsWon;
 }
 
 var roundsDrawn = 0;
