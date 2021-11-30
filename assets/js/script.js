@@ -38,18 +38,18 @@ function playGame(userAnswer) {
 
 function displayUserRock() {
 
-    document.getElementById('user-image').src = 'assets/images/user-rock.png';
+    document.getElementById('user-image').src = 'assets/images/user-rock.webp';
 }
 
 function displayUserPaper() {
 
-    document.getElementById('user-image').src = 'assets/images/user-paper.png';
+    document.getElementById('user-image').src = 'assets/images/user-paper.webp';
 
 }
 
 function displayUserScissors() {
 
-    document.getElementById('user-image').src = 'assets/images/user-scissors.png';
+    document.getElementById('user-image').src = 'assets/images/user-scissors.webp';
 }
 
 function returnGame(userAnswer) {
@@ -139,19 +139,19 @@ function returnGame(userAnswer) {
 
 function displayComputerRock() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-rock.png';
+    document.getElementById('computer-image').src = 'assets/images/computer-rock.webp';
 
 }
 
 function displayComputerPaper() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-paper.png';
+    document.getElementById('computer-image').src = 'assets/images/computer-paper.webp';
 
 }
 
 function displayComputerScissors() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-scissors.png';
+    document.getElementById('computer-image').src = 'assets/images/computer-scissors.webp';
 
 }
 

@@ -48,7 +48,7 @@ Below is a brief overview of the website and it's main features.
 
 ### Fun animated images
 
--   hgj
+-   The use of the images add to the asthetics of the site and makes it much more appealing than just using text.
 
 ### Interactive buttons
 
@@ -110,7 +110,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to ensure ther
 
 ### Lighthouse Testing
 
-Initial lighthouse socres produced a performance of 100, accessibilty of 94 but only a score of 87 for best practices. After exporting all images to webp files and giving the iframe element a title it improved to 94 (mobile) and 98 respectively.
+Initial lighthouse socres produced a performance of 100, accessibilty of 94 but only a score of 87 for best practices. The reason given for the accessibilty score is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour blindness (Protan), I have had no issues telling the colours apart or reading text.
+
 
 -   Mobile Results
 
