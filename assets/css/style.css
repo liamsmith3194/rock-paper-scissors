@@ -91,6 +91,14 @@ body {
     transform: translate(-50%, -50%)
 }
 
+#countdown{
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+   
+}
+
 .win {
     color: #3EA62D;
     font-size: 1.25rem;
@@ -150,25 +158,23 @@ body {
 .button-style:hover {
     background-color: #929292;
     color: white;
+    width: 140px;
+    height: 140px;
 }
 
-.button-style:focus {
+/* .button-style:focus {
     background-color: white;
     border: 7.5px solid;
     border-color: #686868;
     width: 140px;
     height: 140px;
-
 }
 
 .button-style:active {
     background-color: white;
     border: 7.5px solid;
     border-color: #686868;
-    width: 140px;
-    height: 140px;
-
-}
+} */
 
 /* Rules/Instructions*/
 
@@ -236,6 +242,10 @@ body {
     .game-name{
         font-size: 2rem;
         margin-top: 25px;
+    }
+
+    #countdown{
+        font-size: 2rem;
     }
 
     .user-answer-area{
@@ -323,6 +333,10 @@ body {
         font-size: 1.5rem;
     }
 
+    #countdown{
+        font-size: 1.5rem;
+    }
+
     .user-answer-area{
         width: 140px;
 
@@ -351,6 +365,10 @@ body {
 
     .game-name{
         margin-top: 10px;
+        font-size: 1.25rem;
+    }
+
+    #countdown{
         font-size: 1.25rem;
     }
 

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
             playGame(userAnswer);
             setTimeout(function () {
                 returnGame(userAnswer);
-            }, 3000);
+            }, 4000);
         });
     }
 });
@@ -29,6 +29,17 @@ function playGame(userAnswer) {
         alert(`Unknown game type: ${userAnswer}`);
         throw `Unknown game type: ${userAnswer}. Aborting!`;
     }
+
+    let timeleft = 3;
+    let downloadTimer = setInterval(function(){
+      if(timeleft <= 0){
+        clearInterval(downloadTimer);
+        document.getElementById("countdown").innerHTML = "";
+      } else {
+        document.getElementById("countdown").innerHTML = timeleft;
+      }
+      timeleft -= 1;
+    }, 1000);
 
 }
 
@@ -155,7 +166,7 @@ function displayComputerScissors() {
 
 }
 
-var roundNumber = 1;
+let roundNumber = 1;
 
 function increaseRoundNumber() {
     if (roundNumber < 1000000) {
@@ -164,7 +175,7 @@ function increaseRoundNumber() {
     document.getElementById("round").innerHTML = roundNumber;
 }
 
-var roundsWon = 0;
+let roundsWon = 0;
 
 function increaseRoundsWon() {
     if (roundsWon < 1000000) {
@@ -173,7 +184,7 @@ function increaseRoundsWon() {
     document.getElementById("win").innerHTML = roundsWon;
 }
 
-var roundsDrawn = 0;
+let roundsDrawn = 0;
 
 function increaseRoundsDrawn() {
     if (roundsDrawn < 1000000) {
@@ -182,7 +193,7 @@ function increaseRoundsDrawn() {
     document.getElementById("draw").innerHTML = roundsDrawn;
 }
 
-var roundsLost = 0;
+let roundsLost = 0;
 
 function increaseRoundsLost() {
     if (roundsLost < 1000000) {
@@ -190,3 +201,4 @@ function increaseRoundsLost() {
     }
     document.getElementById("loss").innerHTML = roundsLost;
 }
+
