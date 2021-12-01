@@ -187,8 +187,13 @@ GitHub was the program used to deploy the the site, it was accomplished by using
 
 -   Transition CSS - Animates the hover pseduo on the buttons - Love Maths (Walkthrough Project)
 
--   Delay function - Used to display the computer's answer 3 seconds after the user has made their choice.
+-   Countdown function - On click of one of the three options a countdown timer appears underneath the computer icons. 
+[Stack Overflow](https://stackoverflow.com/questions/31106189/create-a-simple-10-second-countdown)
+
+-   Delay function - Used to display the computer's answer working with the above contdown function.
 A futher 1 second delay before alert message informs the user of round result. - [Stack Overflow](https://stackoverflow.com/questions/16873889/how-to-create-javascript-delay-function)
+
+
 
 ### Content
 

@@ -93,6 +93,7 @@ body {
 
 #countdown{
     position: relative;
+    height: 20px;
     font-size: 2.5rem;
     letter-spacing: 5px;
     text-align: center;
@@ -313,6 +314,11 @@ body {
         border: 5px solid #686868;
     }
 
+    .button-style:hover {
+        width: 100px;
+        height: 100px;
+    }
+
     .buttons-area{
         margin: 0 auto;
     }
@@ -412,9 +418,16 @@ body {
     }
 
     .button-style{
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
         margin: 0 15px;
+    }
+
+    .button-style:hover {
+        background-color: #929292;
+        color: white;
+        width: 90px;
+        height: 90px;
     }
 
     .button-style::after{

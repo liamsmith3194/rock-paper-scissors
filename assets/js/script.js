@@ -49,29 +49,29 @@ function playGame(userAnswer) {
 
 function displayUserRock() {
 
-    document.getElementById('user-image').src = 'assets/images/user-rock.webp';
+    document.getElementById("user-image").src = "assets/images/user-rock.webp";
 }
 
 function displayUserPaper() {
 
-    document.getElementById('user-image').src = 'assets/images/user-paper.webp';
+    document.getElementById("user-image").src = "assets/images/user-paper.webp";
 
 }
 
 function displayUserScissors() {
 
-    document.getElementById('user-image').src = 'assets/images/user-scissors.webp';
+    document.getElementById("user-image").src = "assets/images/user-scissors.webp";
 }
 
 function returnGame(userAnswer) {
 
-    let options = ['Rock', 'Paper', 'Scissors'];
+    let options = ["Rock", "Paper", "Scissors"];
     let randomComputerAnswer = options[Math.floor(Math.random() * options.length)];
 
     if (randomComputerAnswer === "Rock" && userAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
         }, 1000);
@@ -104,7 +104,7 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Paper") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
         }, 1000);
@@ -136,33 +136,33 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Scissors") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt's a draw!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
         }, 1000);
 
     } else {
-        alert(`Unknown game type: `);
-        throw `Unknown game type: . Aborting!`;
+        alert(`Game error, please try again later.`);
+        throw `Game error! Please investigate`;
     }
 
 }
 
 function displayComputerRock() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-rock.webp';
+    document.getElementById("computer-image").src = "assets/images/computer-rock.webp";
 
 }
 
 function displayComputerPaper() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-paper.webp';
+    document.getElementById("computer-image").src = "assets/images/computer-paper.webp";
 
 }
 
 function displayComputerScissors() {
 
-    document.getElementById('computer-image').src = 'assets/images/computer-scissors.webp';
+    document.getElementById("computer-image").src = "assets/images/computer-scissors.webp";
 
 }
 
