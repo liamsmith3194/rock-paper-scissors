@@ -4,6 +4,7 @@ body {
     letter-spacing: 2px;
     color: #686868;
     text-align: center;
+    margin: 0 auto;
 }
 
 /* --------- Heading */
@@ -26,19 +27,19 @@ body {
     height: auto;
 }
 
-.column1 {
+.user-side {
     width:33.33333333%;
     float:left;
     margin-top: -35px;
 }
 
-.column2 {
+.game-info {
     width:33.33333333%;
     float:left;
     margin-top: 25px;
 }
 
-.column3 {
+.computer-side {
     width:33.33333333%;
     float:left;
     margin-top: -35px;
@@ -170,7 +171,6 @@ body {
     width: 140px;
     height: 140px;
 }
-
 .button-style:active {
     background-color: white;
     border: 7.5px solid;
@@ -233,6 +233,14 @@ body {
 
     .buttons-area{
         margin-top: 60px;
+    }
+
+    .button-style:hover{
+        background-color: white;
+        border: 7.5px solid;
+        border-color: #686868;
+        width: 120px;
+        height: 120px;
     }
 
 }
@@ -314,17 +322,18 @@ body {
         border: 5px solid #686868;
     }
 
-    .button-style:hover {
-        width: 100px;
-        height: 100px;
-    }
-
     .buttons-area{
         margin: 0 auto;
     }
 
     .button-style::after{
         font-size: 1rem;
+    }
+
+    .button-style:hover{
+        width: 80px;
+        height: 80px;
+        border: 5px solid #686868;
     }
 
     .rules {
@@ -423,11 +432,9 @@ body {
         margin: 0 15px;
     }
 
-    .button-style:hover {
-        background-color: #929292;
-        color: white;
-        width: 90px;
-        height: 90px;
+    .button-style:hover{
+        width: 70px;
+        height: 70px;
     }
 
     .button-style::after{
@@ -438,16 +445,6 @@ body {
     .rules {
         font-size: 0.8rem;
         margin: 10px;
-    }
-
-    .submit-container{
-        margin: 10px;
-    }
-    .submit-style{
-        width: 150px;
-        padding: 8px;
-        font-size: 0.8rem;
-        margin: 0;
     }
 
 }

@@ -1,7 +1,3 @@
-// Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
-
-
 document.addEventListener("DOMContentLoaded", function () {
     let allButtons = document.getElementsByTagName("button");
     for (let button of allButtons) {
@@ -13,41 +9,53 @@ document.addEventListener("DOMContentLoaded", function () {
             }, 4000);
         });
     }
+    
 });
-
 
 
 function playGame(userAnswer) {
 
-    if (userAnswer === "Rock") {
-        displayUserRock();
-    } else if (userAnswer === "Paper") {
-        displayUserPaper();
-    } else if (userAnswer === "Scissors") {
-        displayUserScissors();
-    } else {
-        alert(`Unknown game type: ${userAnswer}`);
-        throw `Unknown game type: ${userAnswer}. Aborting!`;
+    switch (userAnswer) {
+        case "Rock":
+            displayUserRock();
+            break;
+            case "Paper":
+            displayUserPaper();
+            break;
+            case "Scissors":
+            displayUserScissors();
+            break;
+            default:
+                alert(`Game error, please try again later.`);
+        throw `Game error! Please investigate`;
     }
 
-    let timeleft = 3;
-    let downloadTimer = setInterval(function(){
-      if(timeleft <= 0){
-        clearInterval(downloadTimer);
-        document.getElementById("countdown").innerHTML = "";
-      } else {
-        document.getElementById("countdown").innerHTML = timeleft;
-      }
-      timeleft -= 1;
-    }, 1000);
+    threeSecondTimer();
 
 }
+
+function threeSecondTimer() {
+    let timeleft = 3;
+    let downloadTimer = setInterval(function () {
+        if (timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("countdown").innerHTML = "";
+        } else {
+            document.getElementById("countdown").innerHTML = timeleft;
+        }
+        timeleft -= 1;
+    }, 1000);
+}
+
+function disableBtn() {
+    document.getElementsByClassName("button-style").disabled = true;
+  }
 
 /**
  * Generates answer selected by user and displays correct image.
  */
 
-function displayUserRock() {
+ function displayUserRock() {
 
     document.getElementById("user-image").src = "assets/images/user-rock.webp";
 }
@@ -201,4 +209,3 @@ function increaseRoundsLost() {
     }
     document.getElementById("loss").innerHTML = roundsLost;
 }
-
