@@ -95,7 +95,7 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Rock" && userAnswer === "Scissors") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
         }, 1000);
@@ -104,7 +104,7 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Rock") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
         }, 1000);
@@ -136,7 +136,7 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Paper") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
-            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
         }, 1000);

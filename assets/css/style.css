@@ -1,3 +1,84 @@
+.game-area{
+    display: inline-block;
+    width: 100%;
+  
+  }
+
+  .players {
+      width: 100%;
+  }
+
+  .player-name2{
+    width: 33.3333%;
+    font-size: 1.5rem;
+    float: left;
+}
+
+.player-name3{
+    width: 33.3333%;
+    font-size: 1.5rem;
+    float: right;
+}
+  
+  #cat{
+    width: 25%;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+  }
+  
+  #dog{
+    width: 25%;
+    height: auto;
+    float: right;
+    margin-right: 50px;
+  }
+
+  .game-info2 {
+    width:33.33333333%;
+    display: inline-block;
+}
+
+#countdown2 {
+    position: relative;
+    height: 20px;
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.scoreboard2 {
+    margin-top: 35px;
+}
+
+.round-number2{
+    font-size: 1.5rem;
+}
+
+.win2 {
+    color: #3EA62D;
+    font-size: 1.25rem;
+}
+
+.lose2 {
+    color: #FF0000;
+    font-size: 1.25rem;
+}
+
+.draw2 {
+    color: #000000;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+/* --------- Testing */
+
+
+
+
 body {
     background-color: white;
     font-family: "Bebas Neue", cursive;
@@ -243,6 +324,14 @@ body {
         height: 120px;
     }
 
+    #user-image{
+        width: 150%;
+    }
+
+    #computer-image{
+        width: 150%;
+    }
+
 }
 
 
@@ -377,6 +466,18 @@ body {
 }
 
 @media (max-width: 320px) {
+
+    #cat{
+        width: 100px;
+        height: auto;
+        float: left;
+      }
+      
+      #dog{
+        width: 100px;
+        height: auto;
+        float: right;
+      }
 
     .game-name{
         margin-top: 10px;
