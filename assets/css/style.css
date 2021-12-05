@@ -321,7 +321,6 @@ body {
     #computer-image {
         width: 120px;
         margin-top: 50px;
-
     }
 
     .player-name-user {
@@ -379,6 +378,7 @@ body {
     .rules{
         font-size: 1rem;
     }
+}
 
 
 @media (max-width: 320px) {
@@ -458,5 +458,4 @@ body {
         font-size: 0.8rem;
         margin: 10px;
     }
-
 }
