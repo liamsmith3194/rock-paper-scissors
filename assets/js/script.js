@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             let userAnswer = this.getAttribute("data-type");
             playGame(userAnswer);
+           
             setTimeout(function () {
                 returnGame(userAnswer);
             }, 4000);
@@ -11,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 });
+
+
 
 
 function playGame(userAnswer) {
@@ -31,6 +34,7 @@ function playGame(userAnswer) {
     }
 
     threeSecondTimer();
+    disableBtn();
 
 }
 
@@ -48,7 +52,7 @@ function threeSecondTimer() {
 }
 
 function disableBtn() {
-    document.getElementsByClassName("button-style").disabled = true;
+    document.getElementsByTagName("button").disabled = true;
   }
 
 /**
@@ -155,6 +159,13 @@ function returnGame(userAnswer) {
     }
 
 }
+
+
+document.getElementById("user-image").addEventListener("keydown", function(event) {
+    if (event.key === "r") {
+        displayUserRock();
+    }
+});
 
 function displayComputerRock() {
 

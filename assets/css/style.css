@@ -171,6 +171,27 @@ body {
 
 /* --------- Media queries */
 
+@media (max-width: 1024px) {
+
+    .game-name{
+        margin-top: 50px;
+    }
+
+    .players{
+        margin-top: 100px;
+    }
+
+    .game-area{
+        margin-top: 100px;
+    }
+
+    .buttons-area{
+        margin-top: 100px;
+    }
+
+}
+
+
 @media (max-width: 768px) {
 
     #user-image {
