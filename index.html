@@ -17,17 +17,18 @@
     <title>Rock, Paper, Scissors Shoot!</title>
 </head>
 <body>
+
     <div class="game-name">
         Rock, Paper, Scissors <br> Shoot!
     </div>
-    <div class="game-container">
-        <div class="user-side">
-            <div class="player-name">USER</div>
-            <div class="user-answer-area">
-                <div class="user-answer"><img id="user-image" src="./assets/images/user-paper.webp"
-                        alt="Default paper icon used for the users' answer at startup."></div>
-            </div>
+
+        <div class="players">
+            <div class="player-name-user">User</div>
+            <div class="player-name-computer">Computer</div>
         </div>
+        
+        <div class="game-area">
+        <img id="user-image" src="./assets/images/user-paper.webp">
         <div class="game-info">
             <div class="round-number">Round Number <span id="round">1</span>
                 <div id="countdown"></div>
@@ -35,63 +36,11 @@
             <div class="scoreboard">
                 <p class="win">Rounds Won <span id="win">0</span>
                     <p class="draw">Rounds Drawn <span id="draw">0</span>
-                        <p class="lose">Rounds Lost <span id="loss">0</span>
-            </div>
-        </div>
-        <div class="computer-side">
-            <div class="player-name">COMPUTER</div>
-            <div class="computer-answer-area">
-                <div class="computer-answer"><img id="computer-image" src="./assets/images/computer-paper.webp"
-                        alt="Default paper icon used for the computers' answer at startup."></div>
+                        <p class="lose">Rounds Lost <span id="lose">0</span>
             </div>
         </div>
 
-    </div>
-    <div class="buttons-area">
-        <div class="flex-container">
-            <button data-type="Rock" class="button-style">
-                <img src="./assets/images/user-rock.webp" alt="Thumbnail used for Rock button">
-            </button>
-            <p class="rules">Rock Beats Scissors</p>
-        </div>
-        <div class="flex-container">
-            <button data-type="Paper" class="button-style">
-                <img src="./assets/images/user-paper.webp" alt="Thumbnail used for Paper button">
-            </button>
-            <p class="rules">Paper Beats Rock</p>
-        </div>
-        <div class="flex-container">
-            <button data-type="Scissors" class="button-style">
-                <img src="./assets/images/user-scissors.webp" alt="Thumbnail used for Scissors button">
-            </button>
-            <p class="rules">Scissors Beats Paper</p>
-        </div>
-    </div>
-    
-
-    <div class="game-name">
-        Rock, Paper, Scissors <br> Shoot!
-    </div>
-
-        <div class="players">
-            <div class="player-name2">User</div>
-            <div class="player-name3">Computer</div>
-        </div>
-        
-        <div class="game-area">
-        <img id="cat" src="./assets/images/user-paper.webp">
-        <div class="game-info2">
-            <div class="round-number2">Round Number <span id="round">1</span>
-                <div id="countdown2"></div>
-            </div>
-            <div class="scoreboard2">
-                <p class="win2">Rounds Won <span id="win2">0</span>
-                    <p class="draw2">Rounds Drawn <span id="draw2">0</span>
-                        <p class="lose2">Rounds Lost <span id="loss2">0</span>
-            </div>
-        </div>
-
-        <img id="dog" src="./assets/images/computer-paper.webp">
+        <img id="computer-image" src="./assets/images/computer-paper.webp">
     </div>   
 
     <div class="buttons-area">

@@ -207,5 +207,5 @@ function increaseRoundsLost() {
     if (roundsLost < 1000000) {
         roundsLost++;
     }
-    document.getElementById("loss").innerHTML = roundsLost;
+    document.getElementById("lose").innerHTML = roundsLost;
 }
