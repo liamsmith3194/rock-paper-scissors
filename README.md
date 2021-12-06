@@ -116,7 +116,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to ensure ther
 
 ### Lighthouse Testing
 
-Initial lighthouse scores produced a performance of 96-98 & accessibility of 94-100 The reason given for the accessibility score on a mobile is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour-blindness (Protan), I have had no issues telling the colours apart or reading text.
+Initial lighthouse scores produced a performance of 96-99 & accessibility of 94-100 The reason given for the accessibility score on a mobile is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour-blindness (Protan), I have had no issues telling the colours apart or reading text.
 
 - Mobile Results
 
