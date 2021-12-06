@@ -53,13 +53,14 @@ body {
 
 #countdown {
     position: relative;
-    height: 20px;
-    font-size: 2.5rem;
+    height: auto;
+    font-size: 5rem;
     letter-spacing: 5px;
     text-align: center;
 }
 
 .scoreboard {
+    margin-bottom: 25px;
     font-size: 1.5rem;
 }
 
@@ -87,7 +88,7 @@ body {
 .buttons-area {
     width: 100%;
     height: auto;
-    margin: -25px auto;
+    margin: 0 auto;
     position: relative;
     display: flex;
     justify-content: center;
@@ -185,6 +186,14 @@ body {
         margin-top: 100px;
     }
 
+    .button-style:hover {
+        background-color: white;
+        border: 7.5px solid;
+        border-color: #686868;
+        width: 120px;
+        height: 120px;
+    }
+
     .buttons-area{
         margin-top: 100px;
     }
@@ -202,6 +211,10 @@ body {
         width: 220px;
     }
 
+    .players{
+        margin-top: 0;
+    }
+
     .player-name-user {
         margin-top: 50px;
     }
@@ -214,12 +227,16 @@ body {
         margin-top: 50px;
     }
 
+    .game-area{
+        margin-top: 0;
+    }
+
     .round-number {
         margin-top: 50px;
     }
 
     .scoreboard {
-        margin-top: 100px;
+        margin-top: 0;
     }
 
     .buttons-area {
@@ -253,6 +270,10 @@ body {
         margin-top: 50px;
     }
 
+    .players{
+        margin-top: 0;
+    }
+
     .player-name-user {
         margin-top: 50px;
         font-size: 1.25rem;
@@ -263,17 +284,13 @@ body {
         font-size: 1.25rem;
     }
 
-    .game-name {
-        margin-top: 50px;
-    }
-
     .round-number {
         margin-top: 20px;
         font-size: 1.25rem;
     }
 
     .scoreboard {
-        margin-top: 100px;
+        margin-top: 0;
     }
 
     .game-name {
@@ -281,16 +298,16 @@ body {
         margin-top: 25px;
     }
 
-    #countdown {
-        font-size: 2rem;
+    .game-area{
+        margin-top: 0;
     }
+
+    /* #countdown {
+        font-size: 2rem;
+    } */
 
     .round-number {
         font-size: 1.25rem;
-    }
-
-    .scoreboard {
-        margin-top: 100px;
     }
 
     .win {
@@ -363,10 +380,6 @@ body {
         font-size: 1rem;
     }
 
-    .scoreboard {
-        margin-top: 100px;
-    }
-
     .win {
         font-size: 1rem;
     }
@@ -383,9 +396,9 @@ body {
         font-size: 1.5rem;
     }
 
-    #countdown {
+    /* #countdown {
         font-size: 1rem;
-    }
+    } */
 
     .button-style {
         font-size: 1rem;      
@@ -442,9 +455,9 @@ body {
         font-size: 1.25rem;
     }
 
-    #countdown {
+    /* #countdown {
         font-size: 1.25rem;
-    }
+    } */
 
     .player-name {
         font-size: 0.8rem;
@@ -455,7 +468,6 @@ body {
     }
 
     .scoreboard {
-        margin-top: 70px;
         font-size: 0.8rem;
     }
 

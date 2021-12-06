@@ -53,7 +53,14 @@ Below is a brief overview of the website and its main features.
 ### Interactive buttons
 
 - Removing the background behind the images has made the buttons look very professional especially when hovered over with the white background filling in around the icon in a slightly lighter shade of grey. The button also increases in size slightly making it even more obvious for the user to know where the mouse is.
+
 ![Buttons Hover Pseudo](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors/main/assets/readme-images/interactive-buttons-hover.PNG)
+
+### 3 second countdown
+
+- Once the user has selected an answer by clicking one of the buttons, a 3 second timer appears in between the round number and scoreboard. The timer then disapears once the countdown is complete and the end result is revealed.
+
+![3 second countdown](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors/main/assets/readme-images/countdown-timer.PNG)
 
 
 ### Alert message to confirm round outcome
@@ -109,7 +116,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to ensure ther
 
 ### Lighthouse Testing
 
-Initial lighthouse scores produced a performance of 100, accessibility of 94 but only a score of 87 for best practices. The reason given for the accessibility score is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour-blindness (Protan), I have had no issues telling the colours apart or reading text.
+Initial lighthouse scores produced a performance of 96-98 & accessibility of 94-100 The reason given for the accessibility score on a mobile is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour-blindness (Protan), I have had no issues telling the colours apart or reading text.
 
 - Mobile Results
 
@@ -151,7 +158,7 @@ Q4. As a first time visitor, I want to enjoy the game and come back again and ag
 - Internet Explorer - The website doesn't display any images or button labels. This leads to no functionality.
 
 #### Mobile (iPhone X)
-- The hover pseudo has been removed on smaller devices to ensure the user the game has been reset, as the button were not returning to orignal style after selection.
+- The hover pseudo has been removed on smaller devices (tablet-phone) to ensure the user the game has been reset, as the button were not returning to orignal style after selection.
 - The button images appear stretched. No issues via inspect mode in a browser.
 - The button labels don't line up centrally beneath the buttons. No issues via inspect mode in a browser.
 

@@ -13,9 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
     
 });
 
-
-
-
 function playGame(userAnswer) {
 
     switch (userAnswer) {
