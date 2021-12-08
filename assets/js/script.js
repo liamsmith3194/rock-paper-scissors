@@ -4,13 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             let userAnswer = this.getAttribute("data-type");
             playGame(userAnswer);
-           
+
             setTimeout(function () {
                 returnGame(userAnswer);
             }, 4000);
         });
     }
-    
 });
 
 function playGame(userAnswer) {
@@ -19,20 +18,18 @@ function playGame(userAnswer) {
         case "Rock":
             displayUserRock();
             break;
-            case "Paper":
+        case "Paper":
             displayUserPaper();
             break;
-            case "Scissors":
+        case "Scissors":
             displayUserScissors();
             break;
-            default:
-                alert(`Game error, please try again later.`);
-        throw `Game error! Please investigate`;
+        default:
+            alert(`Game error, please try again later.`);
+            throw `Game error! Please investigate`;
     }
 
-    threeSecondTimer();
-    disableBtn();
-
+    // threeSecondTimer();
 }
 
 function threeSecondTimer() {
@@ -48,15 +45,11 @@ function threeSecondTimer() {
     }, 1000);
 }
 
-function disableBtn() {
-    document.getElementsByTagName("button").disabled = true;
-  }
-
 /**
  * Generates answer selected by user and displays correct image.
  */
 
- function displayUserRock() {
+function displayUserRock() {
 
     document.getElementById("user-image").src = "assets/images/user-rock.webp";
 }
@@ -64,7 +57,6 @@ function disableBtn() {
 function displayUserPaper() {
 
     document.getElementById("user-image").src = "assets/images/user-paper.webp";
-
 }
 
 function displayUserScissors() {
@@ -158,7 +150,7 @@ function returnGame(userAnswer) {
 }
 
 
-document.getElementById("user-image").addEventListener("keydown", function(event) {
+document.getElementById("user-image").addEventListener("keydown", function (event) {
     if (event.key === "r") {
         displayUserRock();
     }

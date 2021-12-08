@@ -84,6 +84,7 @@ Below is a brief overview of the website and its main features.
 
 - User selects how many rounds to play, best of 5 etc.
 - The abilty to choose a difficulty level. Easy, medium & hard.
+- Use the data from pervious rounds. For example what does the user do after a draw? Does the user stick with the same button?
 - Display round outcome out of alert message.
 
 ## Technologies
@@ -116,15 +117,15 @@ The W3C Markup Validator and W3C CSS Validator Services were used to ensure ther
 
 ### Lighthouse Testing
 
-Initial lighthouse scores produced a performance of 96-99 & accessibility of 94-100 The reason given for the accessibility score on a mobile is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour-blindness (Protan), I have had no issues telling the colours apart or reading text.
+Initial lighthouse scores produced a performance of 99 & 96 & accessibility of 100 & 94. The reason given for the accessibility score on a mobile is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour-blindness (Protan), I have had no issues telling the colours apart or reading text.
+
+- Desktop Results
+
+![Lighthouse Desktop Results](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors/main/assets/readme-images/lighthouse-laptop.PNG)
 
 - Mobile Results
 
 ![Lighthouse Mobile Results](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors/main/assets/readme-images/lighthouse-mobile.PNG)
-
-- Desktop Results
-
-![Lighthouse Desktop Results](https://raw.githubusercontent.com/liamsmith3194/rock-paper-scissors/main/assets/readme-images/lighthouse-desktop.PNG)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -146,7 +147,7 @@ Q4. As a first time visitor, I want to enjoy the game and come back again and ag
 
 - The way the game is run is so easy to play and understand. I have found myself saying "one more round" constantly, just to finish with a win and beating the computer.
 
-### Continued Testing REPLACE WHEN DONE
+### Continued Testing
 
 - The Website was tested on Google Chrome, Internet Explorer (see glitches), Microsoft Edge and Safari browsers.
 - The website has been displayed on various devices such as Desktop PC, iMac, Laptop, iPhone X, iPad & iPad mini.

@@ -131,19 +131,6 @@ body {
     height: 140px;
 }
 
-/* .button-style:focus {
-    background-color: white;
-    border: 7.5px solid;
-    border-color: #686868;
-    width: 140px;
-    height: 140px;
-}
-.button-style:active {
-    background-color: white;
-    border: 7.5px solid;
-    border-color: #686868;
-} */
-
 /* Rules/Instructions*/
 
 .rules-area {
@@ -174,15 +161,15 @@ body {
 
 @media (max-width: 1024px) {
 
-    .game-name{
+    .game-name {
         margin-top: 50px;
     }
 
-    .players{
+    .players {
         margin-top: 100px;
     }
 
-    .game-area{
+    .game-area {
         margin-top: 100px;
     }
 
@@ -194,12 +181,10 @@ body {
         height: 120px;
     }
 
-    .buttons-area{
+    .buttons-area {
         margin-top: 100px;
     }
-
 }
-
 
 @media (max-width: 768px) {
 
@@ -211,7 +196,7 @@ body {
         width: 220px;
     }
 
-    .players{
+    .players {
         margin-top: 0;
     }
 
@@ -227,7 +212,7 @@ body {
         margin-top: 50px;
     }
 
-    .game-area{
+    .game-area {
         margin-top: 0;
     }
 
@@ -251,12 +236,10 @@ body {
         height: 120px;
     }
 
-    .rules{
+    .rules {
         padding-top: 30px;
     }
-
 }
-
 
 @media (max-width: 425px) {
 
@@ -270,7 +253,7 @@ body {
         margin-top: 50px;
     }
 
-    .players{
+    .players {
         margin-top: 0;
     }
 
@@ -298,13 +281,9 @@ body {
         margin-top: 25px;
     }
 
-    .game-area{
+    .game-area {
         margin-top: 0;
     }
-
-    /* #countdown {
-        font-size: 2rem;
-    } */
 
     .round-number {
         font-size: 1.25rem;
@@ -396,12 +375,8 @@ body {
         font-size: 1.5rem;
     }
 
-    /* #countdown {
-        font-size: 1rem;
-    } */
-
     .button-style {
-        font-size: 1rem;      
+        font-size: 1rem;
     }
 
 
@@ -409,7 +384,7 @@ body {
         font-size: 1rem;
     }
 
-    .rules{
+    .rules {
         font-size: 1rem;
     }
 }
@@ -418,11 +393,11 @@ body {
 @media (max-width: 320px) {
 
     #user-image {
-        width: 110px;
+        width: 90px;
     }
 
     #computer-image {
-        width: 110px;
+        width: 90px;
     }
 
     .player-name-user {
@@ -454,10 +429,6 @@ body {
         margin-top: 10px;
         font-size: 1.25rem;
     }
-
-    /* #countdown {
-        font-size: 1.25rem;
-    } */
 
     .player-name {
         font-size: 0.8rem;
