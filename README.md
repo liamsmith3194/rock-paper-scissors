@@ -85,7 +85,7 @@ Below is a brief overview of the website and its main features.
 - User selects how many rounds to play, best of 5 etc.
 - The abilty to choose a difficulty level. Easy, medium & hard.
 - Use the data from pervious rounds. For example what does the user do after a draw? Does the user stick with the same button?
-- Display round outcome out of alert message.
+- Display round outcome out of alert message. Modal boxes were attempted instead but 
 
 ## Technologies
 

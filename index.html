@@ -19,6 +19,17 @@
 
 <body>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You played: ${userAnswer}<br>The computer played: ${randomComputerAnswer}<br>It"s a draw!</p>
+        </div>
+
+    </div>
+
     <div class="game-name">
         Rock, Paper, Scissors!
     </div>
@@ -48,22 +59,40 @@
 
     <div class="buttons-area">
         <div class="flex-container">
-            <button data-type="Rock" class="button-style">
+            <button data-type="Rock" class="button-style" data-toggle="modal" data-target="#myModal">
                 <img src="./assets/images/user-rock-icon.webp" alt="Icon used for Rock button">
             </button>
             <p class="rules">Rock Beats Scissors</p>
         </div>
         <div class="flex-container">
-            <button data-type="Paper" class="button-style">
+            <button data-type="Paper" class="button-style" data-toggle="modal" data-target="#myModal">
                 <img src="./assets/images/user-paper-icon.webp" alt="Icon used for Paper button">
             </button>
             <p class="rules">Paper Beats Rock</p>
         </div>
         <div class="flex-container">
-            <button data-type="Scissors" class="button-style">
+            <button data-type="Scissors" class="button-style" data-toggle="modal" data-target="#myModal">
                 <img src="./assets/images/user-scissors-icon.webp" alt="Icon used for Scissors button">
             </button>
             <p class="rules">Scissors Beats Paper</p>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Round Summary</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p>You played: <span class="roomNumber"></span>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
