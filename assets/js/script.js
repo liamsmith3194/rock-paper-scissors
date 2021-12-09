@@ -1,30 +1,3 @@
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementsByClassName("button-style");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function () {
-    modal.style.display = "block";
-};
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
-
-
 document.addEventListener("DOMContentLoaded", function () {
     let allButtons = document.getElementsByClassName("button-style");
     for (let button of allButtons) {
@@ -39,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
 function playGame(userAnswer) {
 
     switch (userAnswer) {
@@ -53,7 +25,7 @@ function playGame(userAnswer) {
             displayUserScissors();
             break;
         default:
-            // alert(`Game error, please try again later.`);
+            alert(`Game error, please try again later.`);
             throw `Game error! Please investigate`;
     }
 
@@ -73,12 +45,6 @@ function threeSecondTimer() {
     }, 1000);
 }
 
-
-
-
-/**
- * Generates answer selected by user and displays correct image.
- */
 
 function displayUserRock() {
 
@@ -103,29 +69,26 @@ function returnGame(userAnswer) {
     if (randomComputerAnswer === "Rock" && userAnswer === "Rock") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
-            btn.onclick();
         }, 1000);
 
     } else if (randomComputerAnswer === "Rock" && userAnswer === "Paper") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber();
             increaseRoundsWon();
-            btn.onclick();
 
         }, 1000);
 
     } else if (randomComputerAnswer === "Rock" && userAnswer === "Scissors") {
         displayComputerRock(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
-            btn.onclick();
 
         }, 1000);
 
@@ -133,70 +96,63 @@ function returnGame(userAnswer) {
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Rock") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
-            btn.onclick();
 
         }, 1000);
 
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Paper") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
-            btn.onclick();
 
         }, 1000);
 
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Scissors") {
         displayComputerPaper(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber();
             increaseRoundsWon();
-            btn.onclick();
 
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Rock") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber();
             increaseRoundsWon();
-            btn.onclick();
 
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Paper") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
-            btn.onclick();
 
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Scissors") {
         displayComputerScissors(randomComputerAnswer);
         setTimeout(function () {
-            // alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
+            alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
-            btn.onclick();
 
         }, 1000);
 
     } else {
-        // alert(`Game error, please try again later.`);
+        alert(`Game error, please try again later.`);
         throw `Game error! Please investigate`;
     }
 
 }
-
 
 document.getElementById("user-image").addEventListener("keydown", function (event) {
     if (event.key === "r") {

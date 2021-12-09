@@ -85,7 +85,7 @@ Below is a brief overview of the website and its main features.
 - User selects how many rounds to play, best of 5 etc.
 - The abilty to choose a difficulty level. Easy, medium & hard.
 - Use the data from pervious rounds. For example what does the user do after a draw? Does the user stick with the same button?
-- Display round outcome out of alert message. Modal boxes were attempted instead but 
+- Display round outcome out of alert message. Modal boxes were attempted instead but I wasn't able to make them work in the way I required.
 
 ## Technologies
 
@@ -114,7 +114,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to ensure ther
 
 - [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fliamsmith3194.github.io%2Frock-paper-scissors%2F)
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fliamsmith3194.github.io%2Frock-paper-scissors)
-
+- [Jshint JavaScript linter](https://jshint.com/) - 26 warnings, the mast majority:
+    -   'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+    -   'template literal syntax' is only available in ES6 (use 'esversion: 6').
 ### Lighthouse Testing
 
 Initial lighthouse scores produced a performance of 99 & 96 & accessibility of 100 & 94. The reason given for the accessibility score on a mobile is "Background and foreground colors do not have a sufficient contrast ratio." This points to the win and lose colours used against the white background. As someone with a type of red-green colour-blindness (Protan), I have had no issues telling the colours apart or reading text.
