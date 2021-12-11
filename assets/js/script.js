@@ -35,6 +35,7 @@ function playGame(userAnswer) {
 function threeSecondTimer() {
     let timeleft = 3;
     let downloadTimer = setInterval(function () {
+
         if (timeleft <= 0) {
             clearInterval(downloadTimer);
             document.getElementById("countdown").innerHTML = "";
@@ -44,7 +45,6 @@ function threeSecondTimer() {
         timeleft -= 1;
     }, 1000);
 }
-
 
 function displayUserRock() {
 
@@ -80,7 +80,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber();
             increaseRoundsWon();
-
         }, 1000);
 
     } else if (randomComputerAnswer === "Rock" && userAnswer === "Scissors") {
@@ -89,7 +88,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
-
         }, 1000);
 
 
@@ -99,7 +97,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
-
         }, 1000);
 
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Paper") {
@@ -108,7 +105,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
-
         }, 1000);
 
     } else if (randomComputerAnswer === "Paper" && userAnswer === "Scissors") {
@@ -117,7 +113,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber();
             increaseRoundsWon();
-
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Rock") {
@@ -126,7 +121,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou won!`);
             increaseRoundNumber();
             increaseRoundsWon();
-
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Paper") {
@@ -135,7 +129,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nYou lost!\n`);
             increaseRoundNumber();
             increaseRoundsLost();
-
         }, 1000);
 
     } else if (randomComputerAnswer === "Scissors" && userAnswer === "Scissors") {
@@ -144,7 +137,6 @@ function returnGame(userAnswer) {
             alert(`You played: ${userAnswer} \nThe computer played: ${randomComputerAnswer} \nIt"s a draw!`);
             increaseRoundNumber();
             increaseRoundsDrawn();
-
         }, 1000);
 
     } else {
@@ -153,12 +145,6 @@ function returnGame(userAnswer) {
     }
 
 }
-
-document.getElementById("user-image").addEventListener("keydown", function (event) {
-    if (event.key === "r") {
-        displayUserRock();
-    }
-});
 
 function displayComputerRock() {
 

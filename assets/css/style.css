@@ -13,11 +13,6 @@ body {
     letter-spacing: 5px;
 }
 
-.game-area {
-    display: inline-block;
-    width: 100%;
-}
-
 .players {
     width: 100%;
 }
@@ -34,6 +29,11 @@ body {
     float: right;
     position: relative;
     right: 12.5%;
+}
+
+.game-area {
+    display: inline-block;
+    width: 100%;
 }
 
 #user-image {
@@ -105,7 +105,7 @@ body {
     text-transform: uppercase;
     padding-top: 10px;
     border-radius: 50%;
-    background-color: transparent;
+    background-color: white;
     border: 7.5px solid;
     border-color: #686868;
     width: 120px;
